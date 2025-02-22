@@ -1,5 +1,5 @@
-## VITAL Training School 01
-March 18-21 2025, Delft Netherlands
+## VITAL Training School 01 - Day 01
 
-Coordinator/organizer: Mathias Peirlinck
-Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou
+Welcome: Mathias Peirlinck
+Physical laws and bond graphs: Peter Hunter
+Simple bond graphs + 0D circ models: Peter Hunter, Finar Argus, Beatrice Ghitti
