@@ -1,5 +1,5 @@
-## VITAL Training School 01
-March 18-21 2025, Delft Netherlands
+## VITAL Training School 01 - Day 04
 
-Coordinator/organizer: Mathias Peirlinck
-Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou
+Functional connectivity map: Peter Hunter  
+Functional connectivity tutorial: Finbar Argus  
+Surrogate modeling: Gonzalo Maso Talou  
