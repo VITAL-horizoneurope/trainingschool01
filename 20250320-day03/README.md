@@ -1,5 +1,6 @@
-## VITAL Training School 01
-March 18-21 2025, Delft Netherlands
+## VITAL Training School 01 - Day 03
 
-Coordinator/organizer: Mathias Peirlinck
-Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou
+Alya framework + tutorial: Alberto Zingaro  
+Bayesian inference: Mathias Peirlinck  
+Ion channel modekl / myofilament mechanics: Peter Hunter  
+cellular (cardiomyocyte/neuron) modeling w openCOR: Finar Argus  
