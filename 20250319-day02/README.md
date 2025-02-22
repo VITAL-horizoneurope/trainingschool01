@@ -1,5 +1,5 @@
-## VITAL Training School 01
-March 18-21 2025, Delft Netherlands
+## VITAL Training School 01 - Day 02
 
-Coordinator/organizer: Mathias Peirlinck
-Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou
+0D/1D circulation modeling: Lydia Aslanidou  
+Uncertainty quantification and sensitivity analysis: Wouter Huberts  
+Parameter uniqueness/ identifiability: Shauna O'Donovan  
