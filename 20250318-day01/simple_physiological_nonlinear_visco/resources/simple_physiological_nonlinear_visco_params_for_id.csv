@@ -1,0 +1,5 @@
+vessel_name,                  param_name,       min,        max,      name_for_plotting
+heart,                        q_lv_init,        150e-6,     800e-6,     q_{lvInit} 
+ascending_aorta_A ascending_aorta_B ascending_aorta_C ascending_aorta_D aortic_arch_C2,                      E, 0.1e6, 0.4e6, E_{ar}
+heart,                        E_lv_A,           1e8,        5e8,      E_{lvA}
+heart,                        E_lv_B,           1e6,        5e7,      E_{lvB}

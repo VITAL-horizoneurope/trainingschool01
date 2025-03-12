@@ -1,0 +1,87 @@
+#_______ general inputs ________
+DEBUG: false
+file_prefix: simple_physiological_nonlinear_visco
+# input_param_file must be stored in resources. If first creating a parameters file 
+# set this to parameters_orig.csv and a 
+# parameters file will be generated with spaces for the required parameters
+input_param_file: simple_physiological_nonlinear_visco_parameters.csv
+
+# cpp generation inputs
+# solver options are: RK4, forward_euler, CVODE
+# TODO make this also change the solver in the opencor sims when not generating cpp.
+# solver: RK4
+solver: CVODE
+# model_type can be cellml_only or cpp atm 
+# model_type: cpp
+model_type: cellml_only
+
+#__________ parameter identification inputs __________
+# param_id_method can be any of [genetic_algorithm]
+param_id_method: genetic_algorithm
+
+# pre_time is the amount of time simulated to get to steady state
+pre_time: 20
+# sim_time is the amount of simulation time where the outputs are compared to ground truth
+# NOTE: If doing freq domain fitting make sure the simulation is periodic and the sim time is the period.
+sim_time: 2.0
+
+# specifying number of heart periods has been made obsolete. If you want to do this, do it when preprocessing
+# and set the pre_time and sim_time accordingly.
+
+# it is recommended that users create their own CA_user directory to store input resources and output generated model files. e.g.
+resources_dir: ./resources
+generated_models_dir: ./generated_models
+param_id_output_dir: ./param_id_output
+param_id_obs_path: ./resources/simple_physiological_nonlinear_visco_obs_data.json
+
+# This is for cpp generation
+cpp_generated_models_dir: /home/farg967/software/venous_system/lucas_model/fvm
+# This is for cpp_coupling
+couple_to_1d: false
+cpp_1d_model_config_path: 
+  /home/farg967/software/venous_system/lucas_model/aortic_bif_coupling/run_dir/input1d.dat
+
+# Output time step (sampling) 
+dt: 0.01
+# These are inputs to solver_properties of the solver
+solver_info:
+  # Maximum time step for solver
+  MaximumStep: 0.0001
+  MaximumNumberOfSteps: 5000
+
+    # This for 3compartment
+# param_id_obs_path: /home/farg967/Documents/git_projects/circulatory_autogen/resources/3compartment_obs_data.json
+
+#_______ sensitivity analysis inputs __________
+do_sensitivity: false
+
+#______ genetic algorithm inputs ___________
+ga_options:
+  cost_type: MSE # This should be defined for each entry in the
+                 # obs_data.json file instead. Currently if there is no cost_type entry in the
+                 # obs_data.json entry, it will be set to this entry
+  # maximum number of calls to the forward function during one run of the param_id_method
+  num_calls_to_function: 50000
+  cost_convergence: 0.001
+
+debug_ga_options:
+  cost_type: MSE
+  num_calls_to_function: 30 # TODO change back to 30 for tests
+  cost_convergence: 0.001
+
+#______ mcmc inputs ___________
+do_mcmc: false
+mcmc_options:
+  num_steps: 1000
+  num_walkers: 64
+  # TODO As above for cost_type
+  cost_type: MSE
+  cost_convergence: 0.001
+
+debug_mcmc_options:
+  num_steps: 5
+  num_walkers: 40
+  cost_type: MSE
+  cost_convergence: 0.001
+
+plot_predictions: True
