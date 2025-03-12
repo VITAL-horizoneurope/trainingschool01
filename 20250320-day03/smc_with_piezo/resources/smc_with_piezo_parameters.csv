@@ -40,9 +40,9 @@ CSQ_SRper_T_smc,mM,0.3,hernandezhernandez2024
 k_CSQ_on_smc,per_mMms,2,hernandezhernandez2024
 k_CSQ_off_smc,per_ms,1.6,hernandezhernandez2024
 CSQ_SRcen1_init_smc,mM,0.0344637,hernandezhernandez2024
-Ca_SRcen_init_smc,mM,0.107090976209728,hernandezhernandez2024
+Ca_SRcen_init_smc,mM,0.10384,hernandezhernandez2024
 I_SERC_bar_smc,mM_per_ms,0.00000525,hernandezhernandez2024
-k_mSERCA_smc,mM,0.000219,hernandezhernandez2024
+k_mSERCA_smc,mM,219e-6,hernandezhernandez2024
 BUF_jun_1_init_smc,mM,0.0198703,hernandezhernandez2024
 n_RyR_Ca_jun_smc,dimensionless,1.2,hernandezhernandez2024
 R_10_init_smc,dimensionless,0.000417,hernandezhernandez2024
