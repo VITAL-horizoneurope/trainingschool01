@@ -1,0 +1,10 @@
+name: alya-workshop
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13.2
+  - jupyter
+  - numpy
+  - pandas
+  - matplotlib
