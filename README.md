@@ -26,3 +26,10 @@ Ideally, but not strongly required, we encourage you to:
 - use an IDE such as PyCharm, VS Code or Eclipse pyDev (this will facilitate the coding and execution exercises);
 - bring a computer with an NVIDIA® GPU card with CUDA® architectures 3.5, 5.0, 6.0, 7.0, 7.5, 8.0 and higher (this will speed up the execution of the scripts).
 
+
+### Alya workshop 
+
+The alya workshop will require:
+
+- a distribution of `conda`.
+- a distribution of [ParaView](https://www.paraview.org/download/).
