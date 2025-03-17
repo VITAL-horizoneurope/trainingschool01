@@ -41,7 +41,7 @@ venous_lb,               vp, venous,             leg_L_T leg_R_T trunk_C_T ,veno
 venous_ub,               vp, venous,             arm_L_T arm_R_T head_L_T head_R_T ,venous_svc           
 venous_ivc,              vp, venous,             venous_lb             ,heart                
 venous_svc,              vp, venous,             venous_ub             ,heart                
-K_tube_ascending_aorta_A,nn,material_prop_visco_const,ascending_aorta_A,
+K_tube_ascending_aorta_A,nn,material_prop_visco_myogenic,ascending_aorta_A,smc
 K_tube_ascending_aorta_B,nn,material_prop_visco_const,ascending_aorta_B,
 K_tube_ascending_aorta_C,nn,material_prop_visco_const,ascending_aorta_C,
 K_tube_ascending_aorta_D,nn,material_prop_visco_const,ascending_aorta_D,
@@ -71,3 +71,5 @@ K_tube_common_iliac_R216,nn,material_prop_visco_const,common_iliac_R216,
 K_tube_external_iliac_R220,nn,material_prop_visco_const,external_iliac_R220,
 K_tube_femoral_L200,nn,material_prop_visco_const,femoral_L200,
 K_tube_femoral_R222,nn,material_prop_visco_const,femoral_R222,
+smc,nn,smc_hernandez_with_piezo,K_tube_ascending_aorta_A,piezo_channel
+piezo_channel,nn,i_piezo_Na_tutorial,smc,

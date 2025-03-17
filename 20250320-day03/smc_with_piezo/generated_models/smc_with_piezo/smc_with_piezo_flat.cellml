@@ -1,0 +1,3281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.cellml.org/cellml/2.0#" name="CardiovascularSystem">
+  <units name="s2">
+    <unit exponent="2" units="second"/>
+  </units>
+  <units name="Hz">
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="millis">
+    <unit prefix="milli" units="second"/>
+  </units>
+  <units name="per_millis">
+    <unit exponent="-1" units="millis"/>
+  </units>
+  <units name="mm">
+    <unit prefix="milli" units="metre"/>
+  </units>
+  <units name="m2">
+    <unit exponent="2" units="metre"/>
+  </units>
+  <units name="mm2">
+    <unit exponent="2" prefix="milli" units="metre"/>
+  </units>
+  <units name="m3">
+    <unit exponent="3" units="metre"/>
+  </units>
+  <units name="m4">
+    <unit exponent="4" units="metre"/>
+  </units>
+  <units name="mm3">
+    <unit exponent="3" prefix="milli" units="metre"/>
+  </units>
+  <units name="J_per_s">
+    <unit units="joule"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mol_per_s">
+    <unit units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mmol_per_s">
+    <unit prefix="milli" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="umol_per_s">
+    <unit prefix="micro" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="C_per_s">
+    <unit units="coulomb"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mC_per_s">
+    <unit prefix="milli" units="coulomb"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="uC_per_s">
+    <unit prefix="micro" units="coulomb"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="nC_per_s">
+    <unit prefix="nano" units="coulomb"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="Cm_per_millis">
+    <unit units="coulomb"/>
+    <unit units="metre"/>
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="m_per_s">
+    <unit units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mm_per_s">
+    <unit prefix="milli" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="um_per_s">
+    <unit prefix="milli" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="rad_per_s">
+    <unit units="radian"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m3_per_s">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mL">
+    <unit prefix="milli" units="litre"/>
+  </units>
+  <units name="per_milliL_s">
+    <unit exponent="-1" prefix="milli" units="litre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="s_per_m3">
+    <unit units="second"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="s_per_milliV">
+    <unit units="second"/>
+    <unit exponent="-1" prefix="milli" units="volt"/>
+  </units>
+  <units name="s_per_millis">
+    <unit units="second"/>
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="millis_per_s">
+    <unit prefix="milli" units="second"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mm3_per_s">
+    <unit exponent="3" prefix="milli" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="l_per_s">
+    <unit units="litre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_ml_s">
+    <unit exponent="-1" prefix="milli" units="litre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="J_per_mol">
+    <unit units="joule"/>
+    <unit exponent="-1" units="mole"/>
+  </units>
+  <units name="J_per_kmol_K">
+    <unit units="joule"/>
+    <unit exponent="-1" prefix="kilo" units="mole"/>
+    <unit exponent="-1" units="kelvin"/>
+  </units>
+  <units name="J_per_M">
+    <unit units="J_per_mol"/>
+  </units>
+  <units name="J_per_C">
+    <unit units="joule"/>
+    <unit exponent="-1" units="coulomb"/>
+  </units>
+  <units name="J_per_C_s">
+    <unit units="joule"/>
+    <unit exponent="-1" units="coulomb"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="J_per_m">
+    <unit units="joule"/>
+    <unit exponent="-1" units="metre"/>
+  </units>
+  <units name="J_per_m3">
+    <unit units="joule"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="mmHg">
+    <unit multiplier="133.32" units="pascal"/>
+  </units>
+  <units name="m3_per_J">
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="3" units="metre"/>
+  </units>
+  <units name="J_per_m3s">
+    <unit units="joule"/>
+    <unit exponent="-3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m3_per_Js">
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="J2_per_m6">
+    <unit exponent="2" units="joule"/>
+    <unit exponent="-6" units="metre"/>
+  </units>
+  <units name="Js2_per_C2">
+    <unit exponent="2" units="second"/>
+    <unit units="joule"/>
+    <unit exponent="-2" units="coulomb"/>
+  </units>
+  <units name="Js2_per_mol2">
+    <unit units="joule"/>
+    <unit exponent="2" units="second"/>
+    <unit exponent="-2" units="mole"/>
+  </units>
+  <units name="Js_per_mol2">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-2" units="mole"/>
+  </units>
+  <units name="Js_per_C2">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-2" units="coulomb"/>
+  </units>
+  <units name="J_per_mol2">
+    <unit units="joule"/>
+    <unit exponent="-2" units="mole"/>
+  </units>
+  <units name="C2_per_J_s">
+    <unit exponent="2" units="coulomb"/>
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="J_per_C2">
+    <unit units="joule"/>
+    <unit exponent="-2" units="coulomb"/>
+  </units>
+  <units name="C2_per_J">
+    <unit units="joule"/>
+    <unit exponent="-2" units="coulomb"/>
+  </units>
+  <units name="mol_per_m3">
+    <unit units="mole"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="M">
+    <unit units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="mM">
+    <unit prefix="milli" units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="uM">
+    <unit prefix="micro" units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="kg_per_m3">
+    <unit units="kilogram"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="m3_per_kg">
+    <unit exponent="-1" units="kilogram"/>
+    <unit exponent="3" units="metre"/>
+  </units>
+  <units name="per_m3">
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="mol_per_m2_s">
+    <unit units="mole"/>
+    <unit exponent="-2" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mM_m_per_s">
+    <unit units="mM"/>
+    <unit units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="J_per_m2_s">
+    <unit units="joule"/>
+    <unit exponent="-2" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="Js_per_m4">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-4" units="metre"/>
+  </units>
+  <units name="mM_per_s">
+    <unit units="mM"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_s">
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_mM_s">
+    <unit exponent="-1" units="mM"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m6_per_mol2_s">
+    <unit exponent="6" units="metre"/>
+    <unit exponent="-2" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m3_per_mol">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="mole"/>
+  </units>
+  <units name="mol_per_m3_s">
+    <unit units="mole"/>
+    <unit exponent="-3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_mol">
+    <unit exponent="-1" units="mole"/>
+  </units>
+  <units name="J_per_mol_K">
+    <unit units="joule"/>
+    <unit exponent="-1" units="mole"/>
+    <unit exponent="-1" units="kelvin"/>
+  </units>
+  <units name="m2_per_s">
+    <unit exponent="2" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_C">
+    <unit exponent="-1" units="coulomb"/>
+  </units>
+  <units name="per_m">
+    <unit exponent="-1" units="metre"/>
+  </units>
+  <units name="per_mM">
+    <unit exponent="-1" units="mM"/>
+  </units>
+  <units name="Js2_per_m2">
+    <unit units="joule"/>
+    <unit exponent="2" units="second"/>
+    <unit exponent="-2" units="metre"/>
+  </units>
+  <units name="Js_per_m2">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-2" units="metre"/>
+  </units>
+  <units name="J_per_m2">
+    <unit units="joule"/>
+    <unit exponent="-2" units="metre"/>
+  </units>
+  <units name="m_per_s2">
+    <unit units="metre"/>
+    <unit exponent="-2" units="second"/>
+  </units>
+  <units name="rad_per_s2">
+    <unit units="radian"/>
+    <unit exponent="-2" units="second"/>
+  </units>
+  <units name="Js_per_m3">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="Js2_per_m5">
+    <unit units="joule"/>
+    <unit exponent="2" units="second"/>
+    <unit exponent="-5" units="metre"/>
+  </units>
+  <units name="m5_per_Js2">
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="-2" units="second"/>
+    <unit exponent="5" units="metre"/>
+  </units>
+  <units name="J_per_m6">
+    <unit units="joule"/>
+    <unit exponent="-6" units="metre"/>
+  </units>
+  <units name="m6_per_J">
+    <unit exponent="6" units="metre"/>
+    <unit exponent="-1" units="joule"/>
+  </units>
+  <units name="m6_per_Js">
+    <unit exponent="6" units="metre"/>
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mm6_per_J">
+    <unit exponent="6" prefix="milli" units="metre"/>
+    <unit exponent="-1" units="joule"/>
+  </units>
+  <units name="Js2_per_m9">
+    <unit units="joule"/>
+    <unit exponent="2" units="second"/>
+    <unit exponent="-9" units="metre"/>
+  </units>
+  <units name="m6s_per_J">
+    <unit units="second"/>
+    <unit exponent="6" units="metre"/>
+    <unit exponent="-1" units="joule"/>
+  </units>
+  <units name="Js_per_m6">
+    <unit units="joule"/>
+    <unit units="second"/>
+    <unit exponent="-6" units="metre"/>
+  </units>
+  <units name="Js2_per_m6">
+    <unit units="joule"/>
+    <unit exponent="2" units="second"/>
+    <unit exponent="-6" units="metre"/>
+  </units>
+  <units name="m3_per_s2">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-2" units="second"/>
+  </units>
+  <units name="mm3_per_s2">
+    <unit exponent="3" prefix="milli" units="metre"/>
+    <unit exponent="-2" units="second"/>
+  </units>
+  <units name="per_mm3">
+    <unit exponent="-3" prefix="milli" units="metre"/>
+  </units>
+  <units name="UnitValve">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+    <unit exponent="-0.5" units="J_per_m3"/>
+  </units>
+  <units name="J_per_m9">
+    <unit units="joule"/>
+    <unit exponent="-9" units="metre"/>
+  </units>
+  <units name="milliV">
+    <unit prefix="milli" units="volt"/>
+  </units>
+  <units name="per_milliV">
+    <unit exponent="-1" units="milliV"/>
+  </units>
+  <units name="millis_per_milliV">
+    <unit exponent="-1" units="milliV"/>
+    <unit units="millis"/>
+  </units>
+  <units name="per_V">
+    <unit exponent="-1" units="volt"/>
+  </units>
+  <units name="milliV_per_V">
+    <unit units="milliV"/>
+    <unit exponent="-1" units="volt"/>
+  </units>
+  <units name="V_per_milliV">
+    <unit units="volt"/>
+    <unit exponent="-1" units="milliV"/>
+  </units>
+  <units name="V_per_s">
+    <unit units="volt"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="milliV_per_kiloV">
+    <unit prefix="milli" units="volt"/>
+    <unit exponent="-1" prefix="kilo" units="volt"/>
+  </units>
+  <units name="V2">
+    <unit exponent="2" units="volt"/>
+  </units>
+  <units name="milliV2">
+    <unit exponent="2" prefix="milli" units="volt"/>
+  </units>
+  <units name="millimol">
+    <unit prefix="milli" units="mole"/>
+  </units>
+  <units name="millimolar">
+    <unit prefix="milli" units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="per_millimolar">
+    <unit exponent="-1" units="millimolar"/>
+  </units>
+  <units name="per_millimolar_s">
+    <unit exponent="-1" units="millimolar"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="per_millimolar2_s">
+    <unit exponent="-2" units="millimolar"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="millimolar_per_s">
+    <unit units="millimolar"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="millimolar_per_megamolar">
+    <unit units="millimolar"/>
+    <unit exponent="-1" prefix="mega" units="mole"/>
+    <unit units="litre"/>
+  </units>
+  <units name="per_millimol_milliS">
+    <unit exponent="-1" prefix="milli" units="mole"/>
+    <unit exponent="-1" prefix="milli" units="siemens"/>
+  </units>
+  <units name="per_millimol_millis">
+    <unit exponent="-1" prefix="milli" units="mole"/>
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="per_millimol_s">
+    <unit exponent="-1" prefix="milli" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="microm">
+    <unit prefix="micro" units="metre"/>
+  </units>
+  <units name="microS">
+    <unit prefix="micro" units="siemens"/>
+  </units>
+  <units name="microm3">
+    <unit exponent="3" units="microm"/>
+  </units>
+  <units name="m3_per_microm3">
+    <unit units="m3"/>
+    <unit exponent="-1" units="microm3"/>
+  </units>
+  <units name="picoF">
+    <unit prefix="pico" units="farad"/>
+  </units>
+  <units name="S_per_F">
+    <unit units="siemens"/>
+    <unit exponent="-1" units="farad"/>
+  </units>
+  <units name="m3_per_Fs">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="farad"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="A_per_F">
+    <unit units="ampere"/>
+    <unit exponent="-1" units="farad"/>
+  </units>
+  <units name="megaOhm">
+    <unit prefix="mega" units="ohm"/>
+  </units>
+  <units name="nanoA">
+    <unit prefix="nano" units="ampere"/>
+  </units>
+  <units name="nanoA_per_milliA">
+    <unit prefix="nano" units="ampere"/>
+    <unit exponent="-1" prefix="milli" units="ampere"/>
+  </units>
+  <units name="nanoA_per_A">
+    <unit prefix="nano" units="ampere"/>
+    <unit exponent="-1" units="ampere"/>
+  </units>
+  <units name="A_per_nanoA">
+    <unit exponent="-1" prefix="nano" units="ampere"/>
+    <unit units="ampere"/>
+  </units>
+  <units name="C_per_mol">
+    <unit units="coulomb"/>
+    <unit exponent="-1" units="mole"/>
+  </units>
+  <units name="m3_per_J_millis">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="joule"/>
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="m3_per_mol_millis">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="mole"/>
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="m3_per_millimol_s">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+    <unit exponent="-1" prefix="milli" units="mole"/>
+  </units>
+  <units name="millimol_per_m3">
+    <unit exponent="-3" units="metre"/>
+    <unit prefix="milli" units="mole"/>
+  </units>
+  <units name="Hz2">
+    <unit exponent="-2" units="second"/>
+  </units>
+  <units name="cm">
+    <unit prefix="centi" units="metre"/>
+  </units>
+  <units name="J_per_m4_s">
+    <unit exponent="-4" units="metre"/>
+    <unit units="joule"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m3_per_mol_per_sec">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mol_per_m3_per_kPa">
+    <unit units="mole"/>
+    <unit exponent="-3" units="metre"/>
+    <unit exponent="-1" prefix="kilo" units="pascal"/>
+  </units>
+  <units name="mol_per_m3_per_Pa">
+    <unit units="mole"/>
+    <unit exponent="-3" units="metre"/>
+    <unit exponent="-1" units="pascal"/>
+  </units>
+  <units name="m3_per_mol_per_s">
+    <unit exponent="3" units="metre"/>
+    <unit exponent="-1" units="mole"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="mol_per_m3_per_s">
+    <unit units="mole"/>
+    <unit exponent="-3" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="dim">
+    <unit units="dimensionless"/>
+  </units>
+  <units name="fmol">
+    <unit prefix="femto" units="mole"/>
+  </units>
+  <units name="per_fmol">
+    <unit exponent="-1" units="fmol"/>
+  </units>
+  <units name="nJ_per_s">
+    <unit prefix="nano" units="joule"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="fmol_per_s">
+    <unit units="fmol"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="nC_per_fmol">
+    <unit prefix="nano" units="coulomb"/>
+    <unit exponent="-1" units="fmol"/>
+  </units>
+  <units name="nC">
+    <unit prefix="nano" units="coulomb"/>
+  </units>
+  <units name="nJ_per_fmol">
+    <unit prefix="nano" units="joule"/>
+    <unit exponent="-1" units="fmol"/>
+  </units>
+  <units name="nJ_per_nC">
+    <unit prefix="nano" units="joule"/>
+    <unit exponent="-1" units="nC"/>
+  </units>
+  <units name="fC">
+    <unit prefix="femto" units="coulomb"/>
+  </units>
+  <units name="fF">
+    <unit prefix="femto" units="farad"/>
+  </units>
+  <units name="volt_per_sec">
+    <unit exponent="-1" units="second"/>
+    <unit units="volt"/>
+  </units>
+  <units name="J_per_K_per_mol">
+    <unit units="joule"/>
+    <unit exponent="-1" units="kelvin"/>
+    <unit exponent="-1" units="mole"/>
+  </units>
+  <units name="nS">
+    <unit prefix="nano" units="siemens"/>
+  </units>
+  <units name="nSmV">
+    <unit units="nS"/>
+    <unit units="mV"/>
+  </units>
+  <units name="per_ms">
+    <unit exponent="-1" prefix="milli" units="second"/>
+  </units>
+  <units name="mM4">
+    <unit exponent="4" units="mM"/>
+  </units>
+  <units name="mM_per_ms">
+    <unit units="mM"/>
+    <unit exponent="-1" units="ms"/>
+  </units>
+  <units name="mMms">
+    <unit units="mM"/>
+    <unit units="ms"/>
+  </units>
+  <units name="per_mMms">
+    <unit exponent="-1" units="mMms"/>
+  </units>
+  <units name="molar">
+    <unit units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="micromolar">
+    <unit prefix="micro" units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="nanomolar">
+    <unit prefix="nano" units="mole"/>
+    <unit exponent="-1" units="litre"/>
+  </units>
+  <units name="ms">
+    <unit prefix="milli" units="second"/>
+  </units>
+  <units name="m_cubed">
+    <unit prefix="kilo" units="metre"/>
+  </units>
+  <units name="mV">
+    <unit prefix="milli" units="volt"/>
+  </units>
+  <units name="m_cubed_per_second">
+    <unit units="m_cubed"/>
+    <unit units="per_s"/>
+  </units>
+  <units name="micromolar_m_cubed">
+    <unit units="micromolar"/>
+    <unit units="m_cubed"/>
+  </units>
+  <units name="C">
+    <unit units="ampere"/>
+    <unit units="second"/>
+  </units>
+  <units name="C_per_millimol">
+    <unit units="C"/>
+    <unit exponent="-1" prefix="milli" units="mole"/>
+  </units>
+  <units name="picoA">
+    <unit prefix="pico" units="ampere"/>
+  </units>
+  <units name="picoA_per_picoFarad">
+    <unit units="picoA"/>
+    <unit exponent="-1" units="picoFarad"/>
+  </units>
+  <units name="microL">
+    <unit prefix="micro" units="litre"/>
+  </units>
+  <units name="picoFarad">
+    <unit prefix="pico" units="farad"/>
+  </units>
+  <units name="cm3_per_second">
+    <unit exponent="3" prefix="centi" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="um3_per_second">
+    <unit exponent="3" prefix="micro" units="metre"/>
+    <unit exponent="-1" units="second"/>
+  </units>
+  <units name="m3mM">
+    <unit exponent="3" units="metre"/>
+    <unit units="mM"/>
+  </units>
+  <units name="ms2">
+    <unit exponent="2" units="ms"/>
+  </units>
+  <units name="nM3_per_ps">
+    <unit exponent="3" prefix="nano" units="metre"/>
+    <unit exponent="-1" prefix="pico" units="second"/>
+  </units>
+  <units name="per_s_squared_m_cubed">
+    <unit exponent="-2" units="second"/>
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="per_meters_cubed">
+    <unit exponent="-3" units="metre"/>
+  </units>
+  <units name="umeter3">
+    <unit exponent="3" prefix="micro" units="metre"/>
+  </units>
+  <units name="mill1">
+    <unit exponent="-1" units="volt"/>
+    <unit prefix="milli" units="volt"/>
+  </units>
+  <units name="picoV">
+    <unit prefix="pico" units="volt"/>
+  </units>
+  <units name="pic0">
+    <unit exponent="-1" units="volt"/>
+    <unit units="picoV"/>
+  </units>
+  <units name="nanoV">
+    <unit prefix="nano" units="volt"/>
+  </units>
+  <units name="nan0">
+    <unit exponent="-1" units="volt"/>
+    <unit units="nanoV"/>
+  </units>
+  <units name="C_per_millimol_1">
+    <unit units="C"/>
+    <unit exponent="-1" prefix="milli" units="mole"/>
+  </units>
+  <units name="microm3_1">
+    <unit exponent="3" units="microm"/>
+  </units>
+  <units name="per_mMms_1">
+    <unit exponent="-1" units="mMms"/>
+  </units>
+  <units name="mM_per_ms_1">
+    <unit units="mol_per_m3"/>
+    <unit exponent="-1" units="ms"/>
+  </units>
+  <units name="C_per_millimol_2">
+    <unit units="C"/>
+    <unit exponent="-1" prefix="milli" units="mole"/>
+  </units>
+  <units name="microm3_2">
+    <unit exponent="3" units="microm"/>
+  </units>
+  <units name="per_mMms_2">
+    <unit exponent="-1" units="mMms"/>
+  </units>
+  <units name="mM_per_ms_2">
+    <unit units="mol_per_m3"/>
+    <unit exponent="-1" units="millis"/>
+  </units>
+  <units name="mM4_1">
+    <unit exponent="4" units="mol_per_m3"/>
+  </units>
+  <units name="mMms_1">
+    <unit units="mol_per_m3"/>
+    <unit units="millis"/>
+  </units>
+  <units name="ms2_1">
+    <unit exponent="2" units="millis"/>
+  </units>
+  <component name="parameters">
+    <variable name="Ca_i_init_smc" units="mol_per_m3" initial_value="0.000103" interface="public"/>
+    <variable name="V_init_smc" units="milliV" initial_value="-40.2576" interface="public"/>
+    <variable name="F_smc" units="C_per_millimol_1" initial_value="96.4853415" interface="public"/>
+    <variable name="R_smc" units="J_per_mol_K" initial_value="8.314472" interface="public"/>
+    <variable name="T_smc" units="kelvin" initial_value="295.2" interface="public"/>
+    <variable name="Ca_out_smc" units="mol_per_m3" initial_value="2" interface="public"/>
+    <variable name="Ca_jun_init_smc" units="mol_per_m3" initial_value="0.000252" interface="public"/>
+    <variable name="Z_ca_smc" units="dimensionless" initial_value="2" interface="public"/>
+    <variable name="Na_out_smc" units="mol_per_m3" initial_value="130" interface="public"/>
+    <variable name="Na_i_init_smc" units="mol_per_m3" initial_value="8.84552" interface="public"/>
+    <variable name="K_out_smc" units="mol_per_m3" initial_value="5" interface="public"/>
+    <variable name="K_i_init_smc" units="mol_per_m3" initial_value="141.147" interface="public"/>
+    <variable name="Pk_smc" units="dimensionless" initial_value="0.0289007" interface="public"/>
+    <variable name="vol_cell_smc" units="microm3_1" initial_value="1000" interface="public"/>
+    <variable name="vol_SRcen_smc" units="microm3_1" initial_value="50" interface="public"/>
+    <variable name="vol_jun_smc" units="microm3_1" initial_value="5" interface="public"/>
+    <variable name="BUF_1_init_smc" units="mol_per_m3" initial_value="0.00856984" interface="public"/>
+    <variable name="Z_Na_smc" units="dimensionless" initial_value="1" interface="public"/>
+    <variable name="Z_K_smc" units="dimensionless" initial_value="1" interface="public"/>
+    <variable name="C_m_smc" units="picoF" initial_value="16" interface="public"/>
+    <variable name="BUF_T_smc" units="mol_per_m3" initial_value="0.3" interface="public"/>
+    <variable name="K_BUF_on_smc" units="per_mMms_1" initial_value="22" interface="public"/>
+    <variable name="K_BUF_off_smc" units="per_ms" initial_value="0.077" interface="public"/>
+    <variable name="BUF_jun_T_smc" units="mol_per_m3" initial_value="0.3" interface="public"/>
+    <variable name="CSQ_SRcen_T_smc" units="mol_per_m3" initial_value="0.3" interface="public"/>
+    <variable name="CSQ_SRper_T_smc" units="mol_per_m3" initial_value="0.3" interface="public"/>
+    <variable name="k_CSQ_on_smc" units="per_mMms_1" initial_value="2" interface="public"/>
+    <variable name="k_CSQ_off_smc" units="per_ms" initial_value="1.6" interface="public"/>
+    <variable name="CSQ_SRcen1_init_smc" units="mol_per_m3" initial_value="0.0344637" interface="public"/>
+    <variable name="Ca_SRcen_init_smc" units="mol_per_m3" initial_value="0.107090976209728" interface="public"/>
+    <variable name="I_SERC_bar_smc" units="mM_per_ms_1" initial_value="0.00000525" interface="public"/>
+    <variable name="k_mSERCA_smc" units="mol_per_m3" initial_value="0.000219" interface="public"/>
+    <variable name="BUF_jun_1_init_smc" units="mol_per_m3" initial_value="0.0198703" interface="public"/>
+    <variable name="n_RyR_Ca_jun_smc" units="dimensionless" initial_value="1.2" interface="public"/>
+    <variable name="R_10_init_smc" units="dimensionless" initial_value="0.000417" interface="public"/>
+    <variable name="dL_init_smc" units="dimensionless" initial_value="0.00194629" interface="public"/>
+    <variable name="dF_init_smc" units="dimensionless" initial_value="0.765146" interface="public"/>
+    <variable name="I_PMCA_bar_smc" units="nSmV" initial_value="2.8" interface="public"/>
+    <variable name="K_m_PMCA_smc" units="mol_per_m3" initial_value="0.00017" interface="public"/>
+    <variable name="G_Ca_b_smc" units="nS" initial_value="0.00255992" interface="public"/>
+    <variable name="P_NCX_smc" units="nSmV" initial_value="0.0003" interface="public"/>
+    <variable name="gammax_smc" units="dimensionless" initial_value="0.45" interface="public"/>
+    <variable name="Q10_smc" units="dimensionless" initial_value="1.87" interface="public"/>
+    <variable name="K_mNaK_k_smc" units="mol_per_m3" initial_value="1.6" interface="public"/>
+    <variable name="K_mNaK_na_smc" units="mol_per_m3" initial_value="22" interface="public"/>
+    <variable name="I_NaK_max_smc" units="nSmV" initial_value="104.16" interface="public"/>
+    <variable name="G_Na_b_smc" units="nS" initial_value="0.001" interface="public"/>
+    <variable name="G_K_b_smc" units="nS" initial_value="0.009" interface="public"/>
+    <variable name="Pk_15_init_smc" units="dimensionless" initial_value="0.0686827" interface="public"/>
+    <variable name="G_k15_smc" units="nS" initial_value="1.8" interface="public"/>
+    <variable name="PnsK_smc" units="dimensionless" initial_value="1.3" interface="public"/>
+    <variable name="PnsNa_smc" units="dimensionless" initial_value="0.9" interface="public"/>
+    <variable name="gns_smc" units="nS" initial_value="0.5535" interface="public"/>
+    <variable name="gnsNa_smc" units="dimensionless" initial_value="0.5" interface="public"/>
+    <variable name="gnsK_smc" units="dimensionless" initial_value="0.1" interface="public"/>
+    <variable name="Pk_21_init_smc" units="dimensionless" initial_value="0.0289007" interface="public"/>
+    <variable name="G_k21_smc" units="nS" initial_value="0.7" interface="public"/>
+    <variable name="BK_T_smc" units="dimensionless" initial_value="8" interface="public"/>
+    <variable name="Perm_BKCa_smc" units="cm3_per_second" initial_value="4E-13" interface="public"/>
+    <variable name="x_ab_init_smc" units="dimensionless" initial_value="0.00733279" interface="public"/>
+    <variable name="g_piezo_channel" units="nS" initial_value="4" interface="public"/>
+    <variable name="m_V_init_piezo_channel" units="dimensionless" initial_value="0.01" interface="public"/>
+    <variable name="tau_V_piezo_channel" units="millis" initial_value="10" interface="public"/>
+    <variable name="V_50_piezo_channel" units="milliV" initial_value="-60" interface="public"/>
+    <variable name="k_V_piezo_channel" units="milliV" initial_value="4.352" interface="public"/>
+    <variable name="m_r_init_piezo_channel" units="dimensionless" initial_value="0.001" interface="public"/>
+    <variable name="tau_r_piezo_channel" units="millis" initial_value="10" interface="public"/>
+    <variable name="r_50_piezo_channel" units="dimensionless" initial_value="1.5" interface="public"/>
+    <variable name="k_r_piezo_channel" units="dimensionless" initial_value="0.0653" interface="public"/>
+    <variable name="r_ratio_piezo_channel" units="dimensionless" initial_value="1.2" interface="public"/>
+  </component>
+  <component name="parameters_global"/>
+  <component name="environment">
+    <variable name="time" units="second" interface="public"/>
+  </component>
+  <component name="smc_module">
+    <variable name="t" units="millis" interface="public"/>
+    <variable name="I_piezo" units="nSmV" interface="public"/>
+    <variable name="Ca_i_init" units="mol_per_m3" interface="public"/>
+    <variable name="V_init" units="milliV" interface="public"/>
+    <variable name="F" units="C_per_millimol_2" interface="public"/>
+    <variable name="R" units="J_per_mol_K" interface="public"/>
+    <variable name="T" units="kelvin" interface="public"/>
+    <variable name="Ca_out" units="mol_per_m3" interface="public"/>
+    <variable name="Ca_jun_init" units="mol_per_m3" interface="public"/>
+    <variable name="Z_ca" units="dimensionless" interface="public"/>
+    <variable name="Na_out" units="mol_per_m3" interface="public"/>
+    <variable name="Na_i_init" units="mol_per_m3" interface="public"/>
+    <variable name="K_out" units="mol_per_m3" interface="public"/>
+    <variable name="K_i_init" units="mol_per_m3" interface="public"/>
+    <variable name="Pk" units="dimensionless" interface="public"/>
+    <variable name="I_Ca_total" units="nSmV" interface="public"/>
+    <variable name="I_Na_total" units="nSmV" interface="public"/>
+    <variable name="I_K_total" units="nSmV" interface="public"/>
+    <variable name="I_KvAll" units="nSmV" interface="public"/>
+    <variable name="vol_cell" units="microm3_2" interface="public"/>
+    <variable name="vol_SRcen" units="microm3_2" interface="public"/>
+    <variable name="vol_jun" units="microm3_2" interface="public"/>
+    <variable name="BUF_1_init" units="mol_per_m3" interface="public"/>
+    <variable name="Z_Na" units="dimensionless" interface="public"/>
+    <variable name="Z_K" units="dimensionless" interface="public"/>
+    <variable name="C_m" units="picoF" interface="public"/>
+    <variable name="BUF_T" units="mol_per_m3" interface="public"/>
+    <variable name="K_BUF_on" units="per_mMms_2" interface="public"/>
+    <variable name="K_BUF_off" units="per_ms" interface="public"/>
+    <variable name="BUF_jun_T" units="mol_per_m3" interface="public"/>
+    <variable name="CSQ_SRcen_T" units="mol_per_m3" interface="public"/>
+    <variable name="CSQ_SRper_T" units="mol_per_m3" interface="public"/>
+    <variable name="k_CSQ_on" units="per_mMms_2" interface="public"/>
+    <variable name="k_CSQ_off" units="per_ms" interface="public"/>
+    <variable name="CSQ_SRcen1_init" units="mol_per_m3" interface="public"/>
+    <variable name="Ca_SRcen_init" units="mol_per_m3" interface="public"/>
+    <variable name="I_SERC_bar" units="mM_per_ms_2" interface="public"/>
+    <variable name="I_SERC_bar_init" units="dimensionless" interface="public"/>
+    <variable name="k_mSERCA" units="mol_per_m3" interface="public"/>
+    <variable name="J_SERCA" units="mM_per_ms_2" interface="public"/>
+    <variable name="BUF_jun_1_init" units="mol_per_m3" interface="public"/>
+    <variable name="J_rel" units="mM_per_ms_2" interface="public"/>
+    <variable name="J_jun_in" units="mM_per_ms_2" interface="public"/>
+    <variable name="n_RyR_Ca_jun" units="dimensionless" interface="public"/>
+    <variable name="R_10_init" units="dimensionless" interface="public"/>
+    <variable name="Y_RyR_Ca_jun" units="dimensionless" interface="public"/>
+    <variable name="tau_alpha" units="millis" interface="public"/>
+    <variable name="alpha_inf" units="dimensionless" interface="public"/>
+    <variable name="dL_init" units="dimensionless" interface="public"/>
+    <variable name="dF_init" units="dimensionless" interface="public"/>
+    <variable name="alpha_act" units="millis" interface="public"/>
+    <variable name="beta_act" units="millis" interface="public"/>
+    <variable name="dL_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_dL" units="millis" interface="public"/>
+    <variable name="alpha_ina" units="millis" interface="public"/>
+    <variable name="beta_ina" units="millis" interface="public"/>
+    <variable name="dF_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_dF" units="millis" interface="public"/>
+    <variable name="I_CaV" units="nSmV" interface="public"/>
+    <variable name="I_PMCA_bar" units="nSmV" interface="public"/>
+    <variable name="K_m_PMCA" units="mol_per_m3" interface="public"/>
+    <variable name="I_PMCA" units="nSmV" interface="public"/>
+    <variable name="G_Ca_b" units="nS" interface="public"/>
+    <variable name="E_Ca" units="milliV" interface="public"/>
+    <variable name="I_Ca_leak" units="nSmV" interface="public"/>
+    <variable name="P_NCX" units="nSmV" interface="public"/>
+    <variable name="gammax" units="dimensionless" interface="public"/>
+    <variable name="phi_f" units="dimensionless" interface="public"/>
+    <variable name="phi_r" units="dimensionless" interface="public"/>
+    <variable name="X_NCX" units="dimensionless" interface="public"/>
+    <variable name="I_NCX" units="nSmV" interface="public"/>
+    <variable name="Q10" units="dimensionless" interface="public"/>
+    <variable name="K_mNaK_k" units="mol_per_m3" interface="public"/>
+    <variable name="K_mNaK_na" units="mol_per_m3" interface="public"/>
+    <variable name="N_pow" units="dimensionless" interface="public"/>
+    <variable name="N_1" units="dimensionless" interface="public"/>
+    <variable name="N_2" units="dimensionless" interface="public"/>
+    <variable name="N_0" units="dimensionless" interface="public"/>
+    <variable name="I_NaK" units="nSmV" interface="public"/>
+    <variable name="I_NaK_max" units="nSmV" interface="public"/>
+    <variable name="G_Na_b" units="nS" interface="public"/>
+    <variable name="E_Na" units="milliV" interface="public"/>
+    <variable name="I_Na_Leak" units="nSmV" interface="public"/>
+    <variable name="G_K_b" units="nS" interface="public"/>
+    <variable name="E_K" units="milliV" interface="public"/>
+    <variable name="I_K_Leak" units="nSmV" interface="public"/>
+    <variable name="alpha_x" units="dimensionless" interface="public"/>
+    <variable name="beta_x" units="dimensionless" interface="public"/>
+    <variable name="Pk_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_Pk" units="millis" interface="public"/>
+    <variable name="Pk_15_init" units="dimensionless" interface="public"/>
+    <variable name="G_k15" units="nS" interface="public"/>
+    <variable name="I_Kv15" units="nSmV" interface="public"/>
+    <variable name="PnsK" units="dimensionless" interface="public"/>
+    <variable name="PnsNa" units="dimensionless" interface="public"/>
+    <variable name="gns" units="nS" interface="public"/>
+    <variable name="gnsNa" units="dimensionless" interface="public"/>
+    <variable name="gnsK" units="dimensionless" interface="public"/>
+    <variable name="E_NSC" units="milliV" interface="public"/>
+    <variable name="I_NSC" units="nSmV" interface="public"/>
+    <variable name="I_NSC_Na" units="nSmV" interface="public"/>
+    <variable name="I_NSC_K" units="nSmV" interface="public"/>
+    <variable name="alpha_x21" units="dimensionless" interface="public"/>
+    <variable name="beta_x21" units="dimensionless" interface="public"/>
+    <variable name="Pk_bar21" units="dimensionless" interface="public"/>
+    <variable name="tau_Pk21" units="millis" interface="public"/>
+    <variable name="Pk_21_init" units="dimensionless" interface="public"/>
+    <variable name="G_k21" units="nS" interface="public"/>
+    <variable name="I_Kv21" units="nSmV" interface="public"/>
+    <variable name="BK_T" units="dimensionless" interface="public"/>
+    <variable name="Perm_BKCa" units="cm3_per_second" interface="public"/>
+    <variable name="xabss_z" units="dimensionless" interface="public"/>
+    <variable name="xabss_vh" units="milliV" interface="public"/>
+    <variable name="xabss" units="dimensionless" interface="public"/>
+    <variable name="xabtc" units="millis" interface="public"/>
+    <variable name="x_ab_init" units="dimensionless" interface="public"/>
+    <variable name="I_BKCa" units="nSmV" interface="public"/>
+    <variable name="I_leak_all" units="nSmV" interface="public"/>
+    <variable name="I_total" units="nSmV" interface="public"/>
+    <variable name="Ca_i" units="mol_per_m3" initial_value="Ca_i_init" interface="public"/>
+    <variable name="V" units="milliV" initial_value="V_init" interface="public"/>
+    <variable name="Ca_jun" units="mol_per_m3" initial_value="Ca_jun_init" interface="public"/>
+    <variable name="Na_i" units="mol_per_m3" initial_value="Na_i_init" interface="public"/>
+    <variable name="K_i" units="mol_per_m3" initial_value="K_i_init" interface="public"/>
+    <variable name="BUF_1" units="mol_per_m3" initial_value="BUF_1_init" interface="public"/>
+    <variable name="CSQ_SRcen1" units="mol_per_m3" initial_value="CSQ_SRcen1_init" interface="public"/>
+    <variable name="Ca_SRcen" units="mol_per_m3" initial_value="Ca_SRcen_init" interface="public"/>
+    <variable name="BUF_jun_1" units="mol_per_m3" initial_value="BUF_jun_1_init" interface="public"/>
+    <variable name="R_10" units="dimensionless" initial_value="R_10_init" interface="public"/>
+    <variable name="dL" units="dimensionless" initial_value="dL_init" interface="public"/>
+    <variable name="dF" units="dimensionless" initial_value="dF_init" interface="public"/>
+    <variable name="Pk_15" units="dimensionless" initial_value="Pk_15_init" interface="public"/>
+    <variable name="Pk_21" units="dimensionless" initial_value="Pk_21_init" interface="public"/>
+    <variable name="x_ab" units="dimensionless" initial_value="x_ab_init" interface="public"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_Ca_total</ci>
+        <apply>
+          <minus/>
+          <apply>
+            <plus/>
+            <ci>I_CaV</ci>
+            <ci>I_Ca_leak</ci>
+            <ci>I_PMCA</ci>
+          </apply>
+          <apply>
+            <times/>
+            <cn cellml:units="dimensionless">2</cn>
+            <ci>I_NCX</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_Na_total</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <times/>
+            <cn cellml:units="dimensionless">3</cn>
+            <ci>I_NCX</ci>
+          </apply>
+          <apply>
+            <times/>
+            <cn cellml:units="dimensionless">3</cn>
+            <ci>I_NaK</ci>
+          </apply>
+          <ci>I_NSC_Na</ci>
+          <ci>I_Na_Leak</ci>
+          <ci>I_piezo</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Na_i</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>I_Na_total</ci>
+          </apply>
+          <apply>
+            <times/>
+            <ci>Z_Na</ci>
+            <ci>F</ci>
+            <ci>vol_cell</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_KvAll</ci>
+        <apply>
+          <plus/>
+          <ci>I_Kv15</ci>
+          <ci>I_Kv21</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_K_total</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <minus/>
+            <ci>I_KvAll</ci>
+            <apply>
+              <times/>
+              <cn cellml:units="dimensionless">2</cn>
+              <ci>I_NaK</ci>
+            </apply>
+          </apply>
+          <ci>I_K_Leak</ci>
+          <ci>I_BKCa</ci>
+          <ci>I_NSC_K</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>K_i</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>I_K_total</ci>
+          </apply>
+          <apply>
+            <times/>
+            <ci>Z_K</ci>
+            <ci>F</ci>
+            <ci>vol_cell</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Ca_i</ci>
+        </apply>
+        <apply>
+          <plus/>
+          <apply>
+            <minus/>
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <minus/>
+                  <ci>I_Ca_total</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <cn cellml:units="dimensionless">2</cn>
+                  <ci>F</ci>
+                  <ci>vol_cell</ci>
+                </apply>
+              </apply>
+              <ci>J_SERCA</ci>
+            </apply>
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci>K_BUF_on</ci>
+                <ci>Ca_i</ci>
+                <apply>
+                  <minus/>
+                  <ci>BUF_T</ci>
+                  <ci>BUF_1</ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci>K_BUF_off</ci>
+                <ci>BUF_1</ci>
+              </apply>
+            </apply>
+          </apply>
+          <ci>J_jun_in</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>BUF_1</ci>
+        </apply>
+        <apply>
+          <minus/>
+          <apply>
+            <times/>
+            <ci>K_BUF_on</ci>
+            <ci>Ca_i</ci>
+            <apply>
+              <minus/>
+              <ci>BUF_T</ci>
+              <ci>BUF_1</ci>
+            </apply>
+          </apply>
+          <apply>
+            <times/>
+            <ci>K_BUF_off</ci>
+            <ci>BUF_1</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_SERC_bar_init</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="dimensionless">0.0000035</cn>
+          <cn cellml:units="dimensionless">1.5</cn>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>J_SERCA</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <times/>
+            <ci>I_SERC_bar</ci>
+            <apply>
+              <power/>
+              <ci>Ca_i</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+          </apply>
+          <apply>
+            <plus/>
+            <apply>
+              <power/>
+              <ci>Ca_i</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+            <apply>
+              <power/>
+              <ci>k_mSERCA</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>CSQ_SRcen1</ci>
+        </apply>
+        <apply>
+          <minus/>
+          <apply>
+            <times/>
+            <ci>k_CSQ_on</ci>
+            <ci>Ca_SRcen</ci>
+            <apply>
+              <minus/>
+              <ci>CSQ_SRcen_T</ci>
+              <ci>CSQ_SRcen1</ci>
+            </apply>
+          </apply>
+          <apply>
+            <times/>
+            <ci>k_CSQ_off</ci>
+            <ci>CSQ_SRcen1</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Ca_SRcen</ci>
+        </apply>
+        <apply>
+          <minus/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>J_SERCA</ci>
+              <ci>vol_cell</ci>
+            </apply>
+            <ci>vol_SRcen</ci>
+          </apply>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>J_rel</ci>
+              <ci>vol_cell</ci>
+            </apply>
+            <ci>vol_SRcen</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>BUF_jun_1</ci>
+        </apply>
+        <apply>
+          <minus/>
+          <apply>
+            <times/>
+            <ci>K_BUF_on</ci>
+            <ci>Ca_jun</ci>
+            <apply>
+              <minus/>
+              <ci>BUF_jun_T</ci>
+              <ci>BUF_jun_1</ci>
+            </apply>
+          </apply>
+          <apply>
+            <times/>
+            <ci>K_BUF_off</ci>
+            <ci>BUF_jun_1</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Ca_jun</ci>
+        </apply>
+        <apply>
+          <minus/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>J_rel</ci>
+              <ci>vol_cell</ci>
+            </apply>
+            <ci>vol_jun</ci>
+          </apply>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>J_jun_in</ci>
+              <ci>vol_cell</ci>
+            </apply>
+            <ci>vol_jun</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>Y_RyR_Ca_jun</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <cn cellml:units="mol_per_m3">0.12</cn>
+                <ci>Ca_SRcen</ci>
+              </apply>
+              <cn cellml:units="dimensionless">5</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>tau_alpha</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="mMms_1">1</cn>
+          <apply>
+            <times/>
+            <cn cellml:units="dimensionless">500</cn>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <divide/>
+                    <ci>Ca_jun</ci>
+                    <cn cellml:units="mol_per_m3">1</cn>
+                  </apply>
+                  <ci>n_RyR_Ca_jun</ci>
+                </apply>
+                <ci>Y_RyR_Ca_jun</ci>
+              </apply>
+              <apply>
+                <power/>
+                <cn cellml:units="mol_per_m3">0.065</cn>
+                <ci>n_RyR_Ca_jun</ci>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>alpha_inf</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <times/>
+            <apply>
+              <power/>
+              <ci>Ca_jun</ci>
+              <ci>n_RyR_Ca_jun</ci>
+            </apply>
+            <ci>Y_RyR_Ca_jun</ci>
+          </apply>
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <apply>
+                <power/>
+                <apply>
+                  <divide/>
+                  <ci>Ca_jun</ci>
+                  <cn cellml:units="mol_per_m3">1</cn>
+                </apply>
+                <ci>n_RyR_Ca_jun</ci>
+              </apply>
+              <ci>Y_RyR_Ca_jun</ci>
+            </apply>
+            <apply>
+              <power/>
+              <cn cellml:units="dimensionless">0.065</cn>
+              <ci>n_RyR_Ca_jun</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>R_10</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>alpha_inf</ci>
+            <ci>R_10</ci>
+          </apply>
+          <ci>tau_alpha</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>J_rel</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="per_ms">0.0022</cn>
+          <ci>R_10</ci>
+          <apply>
+            <minus/>
+            <ci>Ca_SRcen</ci>
+            <ci>Ca_jun</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>J_jun_in</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="per_ms">0.0008</cn>
+          <apply>
+            <minus/>
+            <ci>Ca_jun</ci>
+            <ci>Ca_i</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>alpha_act</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="millis">0.3321</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">12.9372</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>beta_act</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="millis">0.1557</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <apply>
+                <minus/>
+                <cn cellml:units="milliV">10.3606</cn>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>dL_bar</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <divide/>
+              <ci>beta_act</ci>
+              <ci>alpha_act</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>tau_dL</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <divide/>
+            <cn cellml:units="ms2_1">1</cn>
+            <apply>
+              <plus/>
+              <ci>alpha_act</ci>
+              <ci>beta_act</ci>
+            </apply>
+          </apply>
+          <cn cellml:units="millis">1.763</cn>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>dL</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>dL_bar</ci>
+            <ci>dL</ci>
+          </apply>
+          <ci>tau_dL</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>alpha_ina</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="millis">0.0028</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <apply>
+                <minus/>
+                <cn cellml:units="milliV">54.1923</cn>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>beta_ina</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="millis">0.0111</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">22.3706</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>dF_bar</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <divide/>
+              <ci>beta_ina</ci>
+              <ci>alpha_ina</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>tau_dF</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <divide/>
+            <cn cellml:units="ms2_1">1</cn>
+            <apply>
+              <plus/>
+              <ci>alpha_ina</ci>
+              <ci>beta_ina</ci>
+            </apply>
+          </apply>
+          <cn cellml:units="millis">74.28</cn>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>dF</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>dF_bar</ci>
+            <ci>dF</ci>
+          </apply>
+          <ci>tau_dF</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_CaV</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <times/>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <cn cellml:units="nM3_per_ps">0.22</cn>
+                <ci>dL</ci>
+                <ci>dF</ci>
+                <apply>
+                  <power/>
+                  <ci>Z_ca</ci>
+                  <cn cellml:units="dimensionless">2</cn>
+                </apply>
+                <ci>F</ci>
+                <ci>F</ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci>R</ci>
+                <ci>T</ci>
+              </apply>
+            </apply>
+            <ci>V</ci>
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci>Ca_i</ci>
+                <apply>
+                  <exp/>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci>Z_ca</ci>
+                      <ci>F</ci>
+                      <ci>V</ci>
+                    </apply>
+                    <apply>
+                      <times/>
+                      <ci>R</ci>
+                      <ci>T</ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <ci>Ca_out</ci>
+            </apply>
+          </apply>
+          <apply>
+            <minus/>
+            <apply>
+              <exp/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci>Z_ca</ci>
+                  <ci>F</ci>
+                  <ci>V</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci>R</ci>
+                  <ci>T</ci>
+                </apply>
+              </apply>
+            </apply>
+            <cn cellml:units="dimensionless">1</cn>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_PMCA</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <times/>
+            <ci>I_PMCA_bar</ci>
+            <apply>
+              <power/>
+              <ci>Ca_i</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+          </apply>
+          <apply>
+            <plus/>
+            <apply>
+              <power/>
+              <ci>Ca_i</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+            <apply>
+              <power/>
+              <ci>K_m_PMCA</ci>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>E_Ca</ci>
+        <apply>
+          <times/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <cn cellml:units="dimensionless">0.5</cn>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+            <ci>F</ci>
+          </apply>
+          <apply>
+            <ln/>
+            <apply>
+              <divide/>
+              <ci>Ca_out</ci>
+              <ci>Ca_i</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_Ca_leak</ci>
+        <apply>
+          <times/>
+          <ci>G_Ca_b</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_Ca</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>phi_f</ci>
+        <apply>
+          <exp/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>gammax</ci>
+              <ci>V</ci>
+              <ci>F</ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>phi_r</ci>
+        <apply>
+          <exp/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <ci>gammax</ci>
+                <cn cellml:units="dimensionless">1</cn>
+              </apply>
+              <ci>V</ci>
+              <ci>F</ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>X_NCX</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <apply>
+              <times/>
+              <apply>
+                <power/>
+                <ci>Na_i</ci>
+                <cn cellml:units="dimensionless">3</cn>
+              </apply>
+              <ci>Ca_out</ci>
+              <ci>phi_f</ci>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <power/>
+                <ci>Na_out</ci>
+                <cn cellml:units="dimensionless">3</cn>
+              </apply>
+              <ci>Ca_i</ci>
+              <ci>phi_r</ci>
+            </apply>
+          </apply>
+          <apply>
+            <plus/>
+            <cn cellml:units="mM4_1">1</cn>
+            <apply>
+              <times/>
+              <cn cellml:units="dimensionless">0.0003</cn>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci>Na_out</ci>
+                    <cn cellml:units="dimensionless">3</cn>
+                  </apply>
+                  <ci>Ca_i</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci>Na_i</ci>
+                    <cn cellml:units="dimensionless">3</cn>
+                  </apply>
+                  <ci>Ca_out</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_NCX</ci>
+        <apply>
+          <times/>
+          <ci>P_NCX</ci>
+          <ci>X_NCX</ci>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>N_pow</ci>
+        <apply>
+          <power/>
+          <ci>Q10</ci>
+          <apply>
+            <divide/>
+            <apply>
+              <minus/>
+              <ci>T</ci>
+              <cn cellml:units="kelvin">309.2</cn>
+            </apply>
+            <cn cellml:units="kelvin">10</cn>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>N_1</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <power/>
+            <ci>K_out</ci>
+            <cn cellml:units="dimensionless">1.1</cn>
+          </apply>
+          <apply>
+            <plus/>
+            <apply>
+              <power/>
+              <ci>K_out</ci>
+              <cn cellml:units="dimensionless">1.1</cn>
+            </apply>
+            <apply>
+              <power/>
+              <ci>K_mNaK_k</ci>
+              <cn cellml:units="dimensionless">1.1</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>N_2</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <power/>
+            <ci>Na_i</ci>
+            <cn cellml:units="dimensionless">1.7</cn>
+          </apply>
+          <apply>
+            <plus/>
+            <apply>
+              <power/>
+              <ci>Na_i</ci>
+              <cn cellml:units="dimensionless">1.7</cn>
+            </apply>
+            <apply>
+              <power/>
+              <ci>K_mNaK_na</ci>
+              <cn cellml:units="dimensionless">1.7</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>N_0</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <times/>
+              <cn cellml:units="dimensionless">0.1245</cn>
+              <apply>
+                <exp/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <apply>
+                      <minus/>
+                      <cn cellml:units="dimensionless">0.1</cn>
+                    </apply>
+                    <ci>V</ci>
+                    <ci>F</ci>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci>R</ci>
+                    <ci>T</ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <cn type="e-notation" cellml:units="dimensionless">2.19<sep/>-3</cn>
+              <apply>
+                <exp/>
+                <apply>
+                  <divide/>
+                  <ci>Na_out</ci>
+                  <cn cellml:units="mol_per_m3">49.71</cn>
+                </apply>
+              </apply>
+              <apply>
+                <exp/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <apply>
+                      <minus/>
+                      <cn cellml:units="dimensionless">1.9</cn>
+                    </apply>
+                    <ci>V</ci>
+                    <ci>F</ci>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci>R</ci>
+                    <ci>T</ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_NaK</ci>
+        <apply>
+          <times/>
+          <ci>I_NaK_max</ci>
+          <ci>N_1</ci>
+          <ci>N_0</ci>
+          <ci>N_2</ci>
+          <ci>N_pow</ci>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <ci>E_Na</ci>
+        <apply>
+          <times/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+            <ci>F</ci>
+          </apply>
+          <apply>
+            <ln/>
+            <apply>
+              <divide/>
+              <ci>Na_out</ci>
+              <ci>Na_i</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_Na_Leak</ci>
+        <apply>
+          <times/>
+          <ci>G_Na_b</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_Na</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <ci>E_K</ci>
+        <apply>
+          <times/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+            <ci>F</ci>
+          </apply>
+          <apply>
+            <ln/>
+            <apply>
+              <divide/>
+              <ci>K_out</ci>
+              <ci>K_i</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_K_Leak</ci>
+        <apply>
+          <times/>
+          <ci>G_K_b</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_K</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>alpha_x</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="dimensionless">0.0717</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">12.9290</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>beta_x</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="dimensionless">0.0533</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">191.7326</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>Pk_bar</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <divide/>
+              <ci>beta_x</ci>
+              <ci>alpha_x</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>tau_Pk</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <divide/>
+            <cn cellml:units="millis">1</cn>
+            <apply>
+              <plus/>
+              <ci>alpha_x</ci>
+              <ci>beta_x</ci>
+            </apply>
+          </apply>
+          <cn cellml:units="millis">0.3489</cn>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Pk_15</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>Pk_bar</ci>
+            <ci>Pk_15</ci>
+          </apply>
+          <ci>tau_Pk</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_Kv15</ci>
+        <apply>
+          <times/>
+          <ci>G_k15</ci>
+          <ci>Pk_15</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_K</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <ci>E_NSC</ci>
+        <apply>
+          <times/>
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci>R</ci>
+              <ci>T</ci>
+            </apply>
+            <ci>F</ci>
+          </apply>
+          <apply>
+            <ln/>
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci>PnsK</ci>
+                  <ci>K_out</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci>PnsNa</ci>
+                  <ci>Na_out</ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci>PnsK</ci>
+                  <ci>K_i</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci>PnsNa</ci>
+                  <ci>Na_i</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_NSC</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <times/>
+            <ci>gnsNa</ci>
+            <ci>gns</ci>
+            <apply>
+              <minus/>
+              <ci>V</ci>
+              <ci>E_NSC</ci>
+            </apply>
+          </apply>
+          <apply>
+            <times/>
+            <ci>gnsK</ci>
+            <ci>gns</ci>
+            <apply>
+              <minus/>
+              <ci>V</ci>
+              <ci>E_NSC</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_NSC_Na</ci>
+        <apply>
+          <times/>
+          <ci>gnsNa</ci>
+          <ci>gns</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_NSC</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_NSC_K</ci>
+        <apply>
+          <times/>
+          <ci>gnsK</ci>
+          <ci>gns</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_NSC</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>alpha_x21</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="dimensionless">0.0404</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">10.5223</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>beta_x21</ci>
+        <apply>
+          <times/>
+          <cn cellml:units="dimensionless">0.0355</cn>
+          <apply>
+            <exp/>
+            <apply>
+              <divide/>
+              <ci>V</ci>
+              <cn cellml:units="milliV">221.4151</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>Pk_bar21</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <divide/>
+              <ci>beta_x21</ci>
+              <ci>alpha_x21</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>tau_Pk21</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <divide/>
+            <cn cellml:units="millis">1</cn>
+            <apply>
+              <plus/>
+              <ci>alpha_x21</ci>
+              <ci>beta_x21</ci>
+            </apply>
+          </apply>
+          <cn cellml:units="millis">11.4616</cn>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>Pk_21</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>Pk_bar21</ci>
+            <ci>Pk_21</ci>
+          </apply>
+          <ci>tau_Pk21</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_Kv21</ci>
+        <apply>
+          <times/>
+          <ci>G_k21</ci>
+          <ci>Pk_21</ci>
+          <apply>
+            <minus/>
+            <ci>V</ci>
+            <ci>E_K</ci>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>xabss_z</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <divide/>
+            <apply>
+              <minus/>
+              <cn cellml:units="dimensionless">0.681249</cn>
+            </apply>
+            <apply>
+              <plus/>
+              <cn cellml:units="dimensionless">1</cn>
+              <apply>
+                <power/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci>Ca_jun</ci>
+                      <cn cellml:units="dimensionless">1000.0</cn>
+                    </apply>
+                    <cn cellml:units="mol_per_m3">0.218988</cn>
+                  </apply>
+                  <cn cellml:units="mol_per_m3">0.428335</cn>
+                </apply>
+                <cn cellml:units="dimensionless">2</cn>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <divide/>
+            <cn cellml:units="dimensionless">1.40001</cn>
+            <apply>
+              <plus/>
+              <cn cellml:units="dimensionless">1</cn>
+              <apply>
+                <power/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <times/>
+                      <ci>Ca_jun</ci>
+                      <cn cellml:units="dimensionless">1000.0</cn>
+                    </apply>
+                    <cn cellml:units="mol_per_m3">228.71</cn>
+                  </apply>
+                  <cn cellml:units="mol_per_m3">684.946</cn>
+                </apply>
+                <cn cellml:units="dimensionless">2</cn>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>xabss_vh</ci>
+        <apply>
+          <minus/>
+          <apply>
+            <divide/>
+            <cn cellml:units="milliV">8540.23</cn>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <times/>
+                    <ci>Ca_jun</ci>
+                    <cn cellml:units="dimensionless">1000.0</cn>
+                  </apply>
+                  <cn cellml:units="mol_per_m3">0.401189</cn>
+                </apply>
+                <cn cellml:units="mol_per_m3">0.00399115</cn>
+              </apply>
+              <cn cellml:units="dimensionless">0.668054</cn>
+            </apply>
+          </apply>
+          <cn cellml:units="milliV">109.28</cn>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>xabss</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1.0</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1.0</cn>
+            <apply>
+              <exp/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci>xabss_z</ci>
+                  </apply>
+                  <ci>F</ci>
+                  <apply>
+                    <minus/>
+                    <ci>V</ci>
+                    <ci>xabss_vh</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci>R</ci>
+                  <ci>T</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>xabtc</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="millis">13.8049</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1.0</cn>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <minus/>
+                  <ci>V</ci>
+                  <cn cellml:units="milliV">153.019</cn>
+                </apply>
+                <cn cellml:units="milliV">66.4952</cn>
+              </apply>
+              <cn cellml:units="dimensionless">2</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>x_ab</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>xabss</ci>
+            <ci>x_ab</ci>
+          </apply>
+          <ci>xabtc</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>I_BKCa</ci>
+        <apply>
+          <divide/>
+          <apply>
+            <times/>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <cn type="e-notation" cellml:units="nanoA_per_A">1<sep/>9</cn>
+                <ci>BK_T</ci>
+                <ci>Perm_BKCa</ci>
+                <ci>x_ab</ci>
+                <ci>F</ci>
+                <ci>F</ci>
+                <ci>V</ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci>R</ci>
+                <ci>T</ci>
+              </apply>
+            </apply>
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci>K_i</ci>
+                <apply>
+                  <exp/>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci>Z_K</ci>
+                      <ci>F</ci>
+                      <ci>V</ci>
+                    </apply>
+                    <apply>
+                      <times/>
+                      <ci>R</ci>
+                      <ci>T</ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <ci>K_out</ci>
+            </apply>
+          </apply>
+          <apply>
+            <minus/>
+            <apply>
+              <exp/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci>Z_K</ci>
+                  <ci>F</ci>
+                  <ci>V</ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci>R</ci>
+                  <ci>T</ci>
+                </apply>
+              </apply>
+            </apply>
+            <cn cellml:units="dimensionless">1</cn>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <ci>I_leak_all</ci>
+        <apply>
+          <plus/>
+          <ci>I_Ca_leak</ci>
+          <ci>I_Na_Leak</ci>
+          <ci>I_K_Leak</ci>
+        </apply>
+      </apply>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply>
+        <eq/>
+        <ci>I_total</ci>
+        <apply>
+          <plus/>
+          <ci>I_CaV</ci>
+          <ci>I_leak_all</ci>
+          <ci>I_PMCA</ci>
+          <ci>I_NCX</ci>
+          <ci>I_NaK</ci>
+          <ci>I_KvAll</ci>
+          <ci>I_NSC_Na</ci>
+          <ci>I_NSC_K</ci>
+          <ci>I_BKCa</ci>
+          <ci>I_piezo</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>V</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>I_total</ci>
+          </apply>
+          <ci>C_m</ci>
+        </apply>
+      </apply>
+    </math>
+  </component>
+  <component name="piezo_channel_module">
+    <variable name="t" units="millis" interface="public"/>
+    <variable name="Vm" units="milliV" interface="public"/>
+    <variable name="g" units="nS" interface="public"/>
+    <variable name="m_V" units="dimensionless" initial_value="m_V_init" interface="public"/>
+    <variable name="m_V_init" units="dimensionless" interface="public"/>
+    <variable name="m_V_inf" units="dimensionless" interface="public"/>
+    <variable name="tau_V" units="millis" interface="public"/>
+    <variable name="V_50" units="milliV" interface="public"/>
+    <variable name="I_piezo" units="nSmV" interface="public"/>
+    <variable name="E_Na" units="milliV" interface="public"/>
+    <variable name="k_V" units="milliV" interface="public"/>
+    <variable name="m_r" units="dimensionless" initial_value="m_r_init" interface="public"/>
+    <variable name="m_r_init" units="dimensionless" interface="public"/>
+    <variable name="m_r_inf" units="dimensionless" interface="public"/>
+    <variable name="tau_r" units="millis" interface="public"/>
+    <variable name="k_r" units="dimensionless" interface="public"/>
+    <variable name="r_50" units="dimensionless" interface="public"/>
+    <variable name="r_ratio" units="dimensionless" interface="public"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:cellml="http://www.cellml.org/cellml/2.0#">
+      <apply>
+        <eq/>
+        <ci>I_piezo</ci>
+        <apply>
+          <times/>
+          <ci>g</ci>
+          <ci>m_V</ci>
+          <ci>m_r</ci>
+          <apply>
+            <minus/>
+            <ci>Vm</ci>
+            <ci>E_Na</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>m_V</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>m_V_inf</ci>
+            <ci>m_V</ci>
+          </apply>
+          <ci>tau_V</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>m_V_inf</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <exp/>
+              <apply>
+                <divide/>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <minus/>
+                    <ci>Vm</ci>
+                    <ci>V_50</ci>
+                  </apply>
+                </apply>
+                <ci>k_V</ci>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+      <!--!!!!! Below here include the equations for stretch sensitive gating.-->
+      <apply>
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>m_r</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <ci>m_r_inf</ci>
+            <ci>m_r</ci>
+          </apply>
+          <ci>tau_r</ci>
+        </apply>
+      </apply>
+      <apply>
+        <eq/>
+        <ci>m_r_inf</ci>
+        <apply>
+          <divide/>
+          <cn cellml:units="dimensionless">1</cn>
+          <apply>
+            <plus/>
+            <cn cellml:units="dimensionless">1</cn>
+            <apply>
+              <exp/>
+              <apply>
+                <divide/>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <minus/>
+                    <ci>r_ratio</ci>
+                    <ci>r_50</ci>
+                  </apply>
+                </apply>
+                <ci>k_r</ci>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </math>
+  </component>
+  <component name="terminal_venous_connection"/>
+  <component name="smc">
+    <variable name="I_Ca_total" units="picoA" interface="public"/>
+    <variable name="I_Na_total" units="picoA" interface="public"/>
+    <variable name="I_K_total" units="picoA" interface="public"/>
+    <variable name="I_KvAll" units="picoA" interface="public"/>
+    <variable name="J_SERCA" units="mM_per_ms" interface="public"/>
+    <variable name="J_rel" units="mM_per_ms" interface="public"/>
+    <variable name="J_jun_in" units="mM_per_ms" interface="public"/>
+    <variable name="Y_RyR_Ca_jun" units="dimensionless" interface="public"/>
+    <variable name="tau_alpha" units="ms" interface="public"/>
+    <variable name="alpha_inf" units="dimensionless" interface="public"/>
+    <variable name="alpha_act" units="ms" interface="public"/>
+    <variable name="beta_act" units="ms" interface="public"/>
+    <variable name="dL_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_dL" units="ms" interface="public"/>
+    <variable name="alpha_ina" units="ms" interface="public"/>
+    <variable name="beta_ina" units="ms" interface="public"/>
+    <variable name="dF_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_dF" units="ms" interface="public"/>
+    <variable name="I_CaV" units="picoA" interface="public"/>
+    <variable name="I_PMCA" units="picoA" interface="public"/>
+    <variable name="E_Ca" units="mV" interface="public"/>
+    <variable name="I_Ca_leak" units="picoA" interface="public"/>
+    <variable name="phi_f" units="dimensionless" interface="public"/>
+    <variable name="phi_r" units="dimensionless" interface="public"/>
+    <variable name="X_NCX" units="dimensionless" interface="public"/>
+    <variable name="I_NCX" units="picoA" interface="public"/>
+    <variable name="N_2" units="dimensionless" interface="public"/>
+    <variable name="N_0" units="dimensionless" interface="public"/>
+    <variable name="I_NaK" units="picoA" interface="public"/>
+    <variable name="E_Na" units="mV" interface="public"/>
+    <variable name="I_Na_Leak" units="picoA" interface="public"/>
+    <variable name="E_K" units="mV" interface="public"/>
+    <variable name="I_K_Leak" units="picoA" interface="public"/>
+    <variable name="alpha_x" units="dimensionless" interface="public"/>
+    <variable name="beta_x" units="dimensionless" interface="public"/>
+    <variable name="Pk_bar" units="dimensionless" interface="public"/>
+    <variable name="tau_Pk" units="ms" interface="public"/>
+    <variable name="I_Kv15" units="picoA" interface="public"/>
+    <variable name="E_NSC" units="mV" interface="public"/>
+    <variable name="I_NSC" units="picoA" interface="public"/>
+    <variable name="I_NSC_Na" units="picoA" interface="public"/>
+    <variable name="I_NSC_K" units="picoA" interface="public"/>
+    <variable name="alpha_x21" units="dimensionless" interface="public"/>
+    <variable name="beta_x21" units="dimensionless" interface="public"/>
+    <variable name="Pk_bar21" units="dimensionless" interface="public"/>
+    <variable name="tau_Pk21" units="ms" interface="public"/>
+    <variable name="I_Kv21" units="picoA" interface="public"/>
+    <variable name="xabss_z" units="dimensionless" interface="public"/>
+    <variable name="xabss_vh" units="mV" interface="public"/>
+    <variable name="xabss" units="dimensionless" interface="public"/>
+    <variable name="xabtc" units="ms" interface="public"/>
+    <variable name="I_BKCa" units="picoA" interface="public"/>
+    <variable name="I_leak_all" units="picoA" interface="public"/>
+    <variable name="I_total" units="picoA" interface="public"/>
+    <variable name="Ca_i_init" units="mM" interface="public"/>
+    <variable name="V_init" units="mV" interface="public"/>
+    <variable name="F" units="C_per_millimol" interface="public"/>
+    <variable name="R" units="J_per_mol_K" interface="public"/>
+    <variable name="T" units="kelvin" interface="public"/>
+    <variable name="Ca_out" units="mM" interface="public"/>
+    <variable name="Ca_jun_init" units="mM" interface="public"/>
+    <variable name="Z_ca" units="dimensionless" interface="public"/>
+    <variable name="Na_out" units="mM" interface="public"/>
+    <variable name="Na_i_init" units="mM" interface="public"/>
+    <variable name="K_out" units="mM" interface="public"/>
+    <variable name="K_i_init" units="mM" interface="public"/>
+    <variable name="Pk" units="dimensionless" interface="public"/>
+    <variable name="vol_cell" units="microm3" interface="public"/>
+    <variable name="vol_SRcen" units="microm3" interface="public"/>
+    <variable name="vol_jun" units="microm3" interface="public"/>
+    <variable name="BUF_1_init" units="mM" interface="public"/>
+    <variable name="Z_Na" units="dimensionless" interface="public"/>
+    <variable name="Z_K" units="dimensionless" interface="public"/>
+    <variable name="C_m" units="picoFarad" interface="public"/>
+    <variable name="BUF_T" units="mM" interface="public"/>
+    <variable name="K_BUF_on" units="per_mMms" interface="public"/>
+    <variable name="K_BUF_off" units="per_ms" interface="public"/>
+    <variable name="BUF_jun_T" units="mM" interface="public"/>
+    <variable name="CSQ_SRcen_T" units="mM" interface="public"/>
+    <variable name="CSQ_SRper_T" units="mM" interface="public"/>
+    <variable name="k_CSQ_on" units="per_mMms" interface="public"/>
+    <variable name="k_CSQ_off" units="per_ms" interface="public"/>
+    <variable name="CSQ_SRcen1_init" units="mM" interface="public"/>
+    <variable name="Ca_SRcen_init" units="mM" interface="public"/>
+    <variable name="I_SERC_bar" units="mM_per_ms" interface="public"/>
+    <variable name="k_mSERCA" units="mM" interface="public"/>
+    <variable name="BUF_jun_1_init" units="mM" interface="public"/>
+    <variable name="n_RyR_Ca_jun" units="dimensionless" interface="public"/>
+    <variable name="R_10_init" units="dimensionless" interface="public"/>
+    <variable name="dL_init" units="dimensionless" interface="public"/>
+    <variable name="dF_init" units="dimensionless" interface="public"/>
+    <variable name="I_PMCA_bar" units="picoA" interface="public"/>
+    <variable name="K_m_PMCA" units="mM" interface="public"/>
+    <variable name="G_Ca_b" units="nS" interface="public"/>
+    <variable name="P_NCX" units="picoA" interface="public"/>
+    <variable name="gammax" units="dimensionless" interface="public"/>
+    <variable name="Q10" units="dimensionless" interface="public"/>
+    <variable name="K_mNaK_k" units="mM" interface="public"/>
+    <variable name="K_mNaK_na" units="mM" interface="public"/>
+    <variable name="I_NaK_max" units="picoA" interface="public"/>
+    <variable name="G_Na_b" units="nS" interface="public"/>
+    <variable name="G_K_b" units="nS" interface="public"/>
+    <variable name="Pk_15_init" units="dimensionless" interface="public"/>
+    <variable name="G_k15" units="nS" interface="public"/>
+    <variable name="PnsK" units="dimensionless" interface="public"/>
+    <variable name="PnsNa" units="dimensionless" interface="public"/>
+    <variable name="gns" units="nS" interface="public"/>
+    <variable name="gnsNa" units="dimensionless" interface="public"/>
+    <variable name="gnsK" units="dimensionless" interface="public"/>
+    <variable name="Pk_21_init" units="dimensionless" interface="public"/>
+    <variable name="G_k21" units="nS" interface="public"/>
+    <variable name="BK_T" units="dimensionless" interface="public"/>
+    <variable name="Perm_BKCa" units="cm3_per_second" interface="public"/>
+    <variable name="x_ab_init" units="dimensionless" interface="public"/>
+    <variable name="Ca_i" units="mM" interface="public"/>
+    <variable name="V" units="mV" interface="public"/>
+    <variable name="Ca_jun" units="mM" interface="public"/>
+    <variable name="Na_i" units="mM" interface="public"/>
+    <variable name="K_i" units="mM" interface="public"/>
+    <variable name="BUF_1" units="mM" interface="public"/>
+    <variable name="CSQ_SRcen1" units="mM" interface="public"/>
+    <variable name="Ca_SRcen" units="mM" interface="public"/>
+    <variable name="BUF_jun_1" units="mM" interface="public"/>
+    <variable name="R_10" units="dimensionless" interface="public"/>
+    <variable name="dL" units="dimensionless" interface="public"/>
+    <variable name="dF" units="dimensionless" interface="public"/>
+    <variable name="Pk_15" units="dimensionless" interface="public"/>
+    <variable name="Pk_21" units="dimensionless" interface="public"/>
+    <variable name="x_ab" units="dimensionless" interface="public"/>
+  </component>
+  <component name="piezo_channel">
+    <variable name="I_piezo" units="picoA" interface="public"/>
+    <variable name="g" units="nS" interface="public"/>
+    <variable name="m_V" units="dimensionless" interface="public"/>
+    <variable name="m_V_init" units="dimensionless" interface="public"/>
+    <variable name="m_V_inf" units="dimensionless" interface="public"/>
+    <variable name="tau_V" units="ms" interface="public"/>
+    <variable name="V_50" units="milliV" interface="public"/>
+    <variable name="k_V" units="milliV" interface="public"/>
+    <variable name="m_r" units="dimensionless" interface="public"/>
+    <variable name="m_r_init" units="dimensionless" interface="public"/>
+    <variable name="m_r_inf" units="dimensionless" interface="public"/>
+    <variable name="tau_r" units="ms" interface="public"/>
+    <variable name="r_50" units="dimensionless" interface="public"/>
+    <variable name="k_r" units="dimensionless" interface="public"/>
+    <variable name="r_ratio" units="dimensionless" interface="public"/>
+  </component>
+  <connection component_1="parameters" component_2="smc_module">
+    <map_variables variable_1="Ca_i_init_smc" variable_2="Ca_i_init"/>
+    <map_variables variable_1="V_init_smc" variable_2="V_init"/>
+    <map_variables variable_1="F_smc" variable_2="F"/>
+    <map_variables variable_1="R_smc" variable_2="R"/>
+    <map_variables variable_1="T_smc" variable_2="T"/>
+    <map_variables variable_1="Ca_out_smc" variable_2="Ca_out"/>
+    <map_variables variable_1="Ca_jun_init_smc" variable_2="Ca_jun_init"/>
+    <map_variables variable_1="Z_ca_smc" variable_2="Z_ca"/>
+    <map_variables variable_1="Na_out_smc" variable_2="Na_out"/>
+    <map_variables variable_1="Na_i_init_smc" variable_2="Na_i_init"/>
+    <map_variables variable_1="K_out_smc" variable_2="K_out"/>
+    <map_variables variable_1="K_i_init_smc" variable_2="K_i_init"/>
+    <map_variables variable_1="Pk_smc" variable_2="Pk"/>
+    <map_variables variable_1="vol_cell_smc" variable_2="vol_cell"/>
+    <map_variables variable_1="vol_SRcen_smc" variable_2="vol_SRcen"/>
+    <map_variables variable_1="vol_jun_smc" variable_2="vol_jun"/>
+    <map_variables variable_1="BUF_1_init_smc" variable_2="BUF_1_init"/>
+    <map_variables variable_1="Z_Na_smc" variable_2="Z_Na"/>
+    <map_variables variable_1="Z_K_smc" variable_2="Z_K"/>
+    <map_variables variable_1="C_m_smc" variable_2="C_m"/>
+    <map_variables variable_1="BUF_T_smc" variable_2="BUF_T"/>
+    <map_variables variable_1="K_BUF_on_smc" variable_2="K_BUF_on"/>
+    <map_variables variable_1="K_BUF_off_smc" variable_2="K_BUF_off"/>
+    <map_variables variable_1="BUF_jun_T_smc" variable_2="BUF_jun_T"/>
+    <map_variables variable_1="CSQ_SRcen_T_smc" variable_2="CSQ_SRcen_T"/>
+    <map_variables variable_1="CSQ_SRper_T_smc" variable_2="CSQ_SRper_T"/>
+    <map_variables variable_1="k_CSQ_on_smc" variable_2="k_CSQ_on"/>
+    <map_variables variable_1="k_CSQ_off_smc" variable_2="k_CSQ_off"/>
+    <map_variables variable_1="CSQ_SRcen1_init_smc" variable_2="CSQ_SRcen1_init"/>
+    <map_variables variable_1="Ca_SRcen_init_smc" variable_2="Ca_SRcen_init"/>
+    <map_variables variable_1="I_SERC_bar_smc" variable_2="I_SERC_bar"/>
+    <map_variables variable_1="k_mSERCA_smc" variable_2="k_mSERCA"/>
+    <map_variables variable_1="BUF_jun_1_init_smc" variable_2="BUF_jun_1_init"/>
+    <map_variables variable_1="n_RyR_Ca_jun_smc" variable_2="n_RyR_Ca_jun"/>
+    <map_variables variable_1="R_10_init_smc" variable_2="R_10_init"/>
+    <map_variables variable_1="dL_init_smc" variable_2="dL_init"/>
+    <map_variables variable_1="dF_init_smc" variable_2="dF_init"/>
+    <map_variables variable_1="I_PMCA_bar_smc" variable_2="I_PMCA_bar"/>
+    <map_variables variable_1="K_m_PMCA_smc" variable_2="K_m_PMCA"/>
+    <map_variables variable_1="G_Ca_b_smc" variable_2="G_Ca_b"/>
+    <map_variables variable_1="P_NCX_smc" variable_2="P_NCX"/>
+    <map_variables variable_1="gammax_smc" variable_2="gammax"/>
+    <map_variables variable_1="Q10_smc" variable_2="Q10"/>
+    <map_variables variable_1="K_mNaK_k_smc" variable_2="K_mNaK_k"/>
+    <map_variables variable_1="K_mNaK_na_smc" variable_2="K_mNaK_na"/>
+    <map_variables variable_1="I_NaK_max_smc" variable_2="I_NaK_max"/>
+    <map_variables variable_1="G_Na_b_smc" variable_2="G_Na_b"/>
+    <map_variables variable_1="G_K_b_smc" variable_2="G_K_b"/>
+    <map_variables variable_1="Pk_15_init_smc" variable_2="Pk_15_init"/>
+    <map_variables variable_1="G_k15_smc" variable_2="G_k15"/>
+    <map_variables variable_1="PnsK_smc" variable_2="PnsK"/>
+    <map_variables variable_1="PnsNa_smc" variable_2="PnsNa"/>
+    <map_variables variable_1="gns_smc" variable_2="gns"/>
+    <map_variables variable_1="gnsNa_smc" variable_2="gnsNa"/>
+    <map_variables variable_1="gnsK_smc" variable_2="gnsK"/>
+    <map_variables variable_1="Pk_21_init_smc" variable_2="Pk_21_init"/>
+    <map_variables variable_1="G_k21_smc" variable_2="G_k21"/>
+    <map_variables variable_1="BK_T_smc" variable_2="BK_T"/>
+    <map_variables variable_1="Perm_BKCa_smc" variable_2="Perm_BKCa"/>
+    <map_variables variable_1="x_ab_init_smc" variable_2="x_ab_init"/>
+  </connection>
+  <connection component_1="parameters" component_2="piezo_channel_module">
+    <map_variables variable_1="g_piezo_channel" variable_2="g"/>
+    <map_variables variable_1="m_V_init_piezo_channel" variable_2="m_V_init"/>
+    <map_variables variable_1="tau_V_piezo_channel" variable_2="tau_V"/>
+    <map_variables variable_1="V_50_piezo_channel" variable_2="V_50"/>
+    <map_variables variable_1="k_V_piezo_channel" variable_2="k_V"/>
+    <map_variables variable_1="m_r_init_piezo_channel" variable_2="m_r_init"/>
+    <map_variables variable_1="tau_r_piezo_channel" variable_2="tau_r"/>
+    <map_variables variable_1="r_50_piezo_channel" variable_2="r_50"/>
+    <map_variables variable_1="k_r_piezo_channel" variable_2="k_r"/>
+    <map_variables variable_1="r_ratio_piezo_channel" variable_2="r_ratio"/>
+  </connection>
+  <connection component_1="environment" component_2="smc_module">
+    <map_variables variable_1="time" variable_2="t"/>
+  </connection>
+  <connection component_1="environment" component_2="piezo_channel_module">
+    <map_variables variable_1="time" variable_2="t"/>
+  </connection>
+  <connection component_1="smc_module" component_2="piezo_channel_module">
+    <map_variables variable_1="I_piezo" variable_2="I_piezo"/>
+    <map_variables variable_1="E_Na" variable_2="E_Na"/>
+    <map_variables variable_1="V" variable_2="Vm"/>
+  </connection>
+  <connection component_1="smc_module" component_2="smc">
+    <map_variables variable_1="Ca_i_init" variable_2="Ca_i_init"/>
+    <map_variables variable_1="V_init" variable_2="V_init"/>
+    <map_variables variable_1="F" variable_2="F"/>
+    <map_variables variable_1="R" variable_2="R"/>
+    <map_variables variable_1="T" variable_2="T"/>
+    <map_variables variable_1="Ca_out" variable_2="Ca_out"/>
+    <map_variables variable_1="Ca_jun_init" variable_2="Ca_jun_init"/>
+    <map_variables variable_1="Z_ca" variable_2="Z_ca"/>
+    <map_variables variable_1="Na_out" variable_2="Na_out"/>
+    <map_variables variable_1="Na_i_init" variable_2="Na_i_init"/>
+    <map_variables variable_1="K_out" variable_2="K_out"/>
+    <map_variables variable_1="K_i_init" variable_2="K_i_init"/>
+    <map_variables variable_1="Pk" variable_2="Pk"/>
+    <map_variables variable_1="I_Ca_total" variable_2="I_Ca_total"/>
+    <map_variables variable_1="I_Na_total" variable_2="I_Na_total"/>
+    <map_variables variable_1="I_K_total" variable_2="I_K_total"/>
+    <map_variables variable_1="I_KvAll" variable_2="I_KvAll"/>
+    <map_variables variable_1="vol_cell" variable_2="vol_cell"/>
+    <map_variables variable_1="vol_SRcen" variable_2="vol_SRcen"/>
+    <map_variables variable_1="vol_jun" variable_2="vol_jun"/>
+    <map_variables variable_1="BUF_1_init" variable_2="BUF_1_init"/>
+    <map_variables variable_1="Z_Na" variable_2="Z_Na"/>
+    <map_variables variable_1="Z_K" variable_2="Z_K"/>
+    <map_variables variable_1="C_m" variable_2="C_m"/>
+    <map_variables variable_1="BUF_T" variable_2="BUF_T"/>
+    <map_variables variable_1="K_BUF_on" variable_2="K_BUF_on"/>
+    <map_variables variable_1="K_BUF_off" variable_2="K_BUF_off"/>
+    <map_variables variable_1="BUF_jun_T" variable_2="BUF_jun_T"/>
+    <map_variables variable_1="CSQ_SRcen_T" variable_2="CSQ_SRcen_T"/>
+    <map_variables variable_1="CSQ_SRper_T" variable_2="CSQ_SRper_T"/>
+    <map_variables variable_1="k_CSQ_on" variable_2="k_CSQ_on"/>
+    <map_variables variable_1="k_CSQ_off" variable_2="k_CSQ_off"/>
+    <map_variables variable_1="CSQ_SRcen1_init" variable_2="CSQ_SRcen1_init"/>
+    <map_variables variable_1="Ca_SRcen_init" variable_2="Ca_SRcen_init"/>
+    <map_variables variable_1="I_SERC_bar" variable_2="I_SERC_bar"/>
+    <map_variables variable_1="k_mSERCA" variable_2="k_mSERCA"/>
+    <map_variables variable_1="J_SERCA" variable_2="J_SERCA"/>
+    <map_variables variable_1="BUF_jun_1_init" variable_2="BUF_jun_1_init"/>
+    <map_variables variable_1="J_rel" variable_2="J_rel"/>
+    <map_variables variable_1="J_jun_in" variable_2="J_jun_in"/>
+    <map_variables variable_1="n_RyR_Ca_jun" variable_2="n_RyR_Ca_jun"/>
+    <map_variables variable_1="R_10_init" variable_2="R_10_init"/>
+    <map_variables variable_1="Y_RyR_Ca_jun" variable_2="Y_RyR_Ca_jun"/>
+    <map_variables variable_1="tau_alpha" variable_2="tau_alpha"/>
+    <map_variables variable_1="alpha_inf" variable_2="alpha_inf"/>
+    <map_variables variable_1="dL_init" variable_2="dL_init"/>
+    <map_variables variable_1="dF_init" variable_2="dF_init"/>
+    <map_variables variable_1="alpha_act" variable_2="alpha_act"/>
+    <map_variables variable_1="beta_act" variable_2="beta_act"/>
+    <map_variables variable_1="dL_bar" variable_2="dL_bar"/>
+    <map_variables variable_1="tau_dL" variable_2="tau_dL"/>
+    <map_variables variable_1="alpha_ina" variable_2="alpha_ina"/>
+    <map_variables variable_1="beta_ina" variable_2="beta_ina"/>
+    <map_variables variable_1="dF_bar" variable_2="dF_bar"/>
+    <map_variables variable_1="tau_dF" variable_2="tau_dF"/>
+    <map_variables variable_1="I_CaV" variable_2="I_CaV"/>
+    <map_variables variable_1="I_PMCA_bar" variable_2="I_PMCA_bar"/>
+    <map_variables variable_1="K_m_PMCA" variable_2="K_m_PMCA"/>
+    <map_variables variable_1="I_PMCA" variable_2="I_PMCA"/>
+    <map_variables variable_1="G_Ca_b" variable_2="G_Ca_b"/>
+    <map_variables variable_1="E_Ca" variable_2="E_Ca"/>
+    <map_variables variable_1="I_Ca_leak" variable_2="I_Ca_leak"/>
+    <map_variables variable_1="P_NCX" variable_2="P_NCX"/>
+    <map_variables variable_1="gammax" variable_2="gammax"/>
+    <map_variables variable_1="phi_f" variable_2="phi_f"/>
+    <map_variables variable_1="phi_r" variable_2="phi_r"/>
+    <map_variables variable_1="X_NCX" variable_2="X_NCX"/>
+    <map_variables variable_1="I_NCX" variable_2="I_NCX"/>
+    <map_variables variable_1="Q10" variable_2="Q10"/>
+    <map_variables variable_1="K_mNaK_k" variable_2="K_mNaK_k"/>
+    <map_variables variable_1="K_mNaK_na" variable_2="K_mNaK_na"/>
+    <map_variables variable_1="N_2" variable_2="N_2"/>
+    <map_variables variable_1="N_0" variable_2="N_0"/>
+    <map_variables variable_1="I_NaK" variable_2="I_NaK"/>
+    <map_variables variable_1="I_NaK_max" variable_2="I_NaK_max"/>
+    <map_variables variable_1="G_Na_b" variable_2="G_Na_b"/>
+    <map_variables variable_1="E_Na" variable_2="E_Na"/>
+    <map_variables variable_1="I_Na_Leak" variable_2="I_Na_Leak"/>
+    <map_variables variable_1="G_K_b" variable_2="G_K_b"/>
+    <map_variables variable_1="E_K" variable_2="E_K"/>
+    <map_variables variable_1="I_K_Leak" variable_2="I_K_Leak"/>
+    <map_variables variable_1="alpha_x" variable_2="alpha_x"/>
+    <map_variables variable_1="beta_x" variable_2="beta_x"/>
+    <map_variables variable_1="Pk_bar" variable_2="Pk_bar"/>
+    <map_variables variable_1="tau_Pk" variable_2="tau_Pk"/>
+    <map_variables variable_1="Pk_15_init" variable_2="Pk_15_init"/>
+    <map_variables variable_1="G_k15" variable_2="G_k15"/>
+    <map_variables variable_1="I_Kv15" variable_2="I_Kv15"/>
+    <map_variables variable_1="PnsK" variable_2="PnsK"/>
+    <map_variables variable_1="PnsNa" variable_2="PnsNa"/>
+    <map_variables variable_1="gns" variable_2="gns"/>
+    <map_variables variable_1="gnsNa" variable_2="gnsNa"/>
+    <map_variables variable_1="gnsK" variable_2="gnsK"/>
+    <map_variables variable_1="E_NSC" variable_2="E_NSC"/>
+    <map_variables variable_1="I_NSC" variable_2="I_NSC"/>
+    <map_variables variable_1="I_NSC_Na" variable_2="I_NSC_Na"/>
+    <map_variables variable_1="I_NSC_K" variable_2="I_NSC_K"/>
+    <map_variables variable_1="alpha_x21" variable_2="alpha_x21"/>
+    <map_variables variable_1="beta_x21" variable_2="beta_x21"/>
+    <map_variables variable_1="Pk_bar21" variable_2="Pk_bar21"/>
+    <map_variables variable_1="tau_Pk21" variable_2="tau_Pk21"/>
+    <map_variables variable_1="Pk_21_init" variable_2="Pk_21_init"/>
+    <map_variables variable_1="G_k21" variable_2="G_k21"/>
+    <map_variables variable_1="I_Kv21" variable_2="I_Kv21"/>
+    <map_variables variable_1="BK_T" variable_2="BK_T"/>
+    <map_variables variable_1="Perm_BKCa" variable_2="Perm_BKCa"/>
+    <map_variables variable_1="xabss_z" variable_2="xabss_z"/>
+    <map_variables variable_1="xabss_vh" variable_2="xabss_vh"/>
+    <map_variables variable_1="xabss" variable_2="xabss"/>
+    <map_variables variable_1="xabtc" variable_2="xabtc"/>
+    <map_variables variable_1="x_ab_init" variable_2="x_ab_init"/>
+    <map_variables variable_1="I_BKCa" variable_2="I_BKCa"/>
+    <map_variables variable_1="I_leak_all" variable_2="I_leak_all"/>
+    <map_variables variable_1="I_total" variable_2="I_total"/>
+    <map_variables variable_1="Ca_i" variable_2="Ca_i"/>
+    <map_variables variable_1="V" variable_2="V"/>
+    <map_variables variable_1="Ca_jun" variable_2="Ca_jun"/>
+    <map_variables variable_1="Na_i" variable_2="Na_i"/>
+    <map_variables variable_1="K_i" variable_2="K_i"/>
+    <map_variables variable_1="BUF_1" variable_2="BUF_1"/>
+    <map_variables variable_1="CSQ_SRcen1" variable_2="CSQ_SRcen1"/>
+    <map_variables variable_1="Ca_SRcen" variable_2="Ca_SRcen"/>
+    <map_variables variable_1="BUF_jun_1" variable_2="BUF_jun_1"/>
+    <map_variables variable_1="R_10" variable_2="R_10"/>
+    <map_variables variable_1="dL" variable_2="dL"/>
+    <map_variables variable_1="dF" variable_2="dF"/>
+    <map_variables variable_1="Pk_15" variable_2="Pk_15"/>
+    <map_variables variable_1="Pk_21" variable_2="Pk_21"/>
+    <map_variables variable_1="x_ab" variable_2="x_ab"/>
+  </connection>
+  <connection component_1="piezo_channel_module" component_2="piezo_channel">
+    <map_variables variable_1="g" variable_2="g"/>
+    <map_variables variable_1="m_V" variable_2="m_V"/>
+    <map_variables variable_1="m_V_init" variable_2="m_V_init"/>
+    <map_variables variable_1="m_V_inf" variable_2="m_V_inf"/>
+    <map_variables variable_1="tau_V" variable_2="tau_V"/>
+    <map_variables variable_1="V_50" variable_2="V_50"/>
+    <map_variables variable_1="I_piezo" variable_2="I_piezo"/>
+    <map_variables variable_1="k_V" variable_2="k_V"/>
+    <map_variables variable_1="m_r" variable_2="m_r"/>
+    <map_variables variable_1="m_r_init" variable_2="m_r_init"/>
+    <map_variables variable_1="m_r_inf" variable_2="m_r_inf"/>
+    <map_variables variable_1="tau_r" variable_2="tau_r"/>
+    <map_variables variable_1="k_r" variable_2="k_r"/>
+    <map_variables variable_1="r_50" variable_2="r_50"/>
+    <map_variables variable_1="r_ratio" variable_2="r_ratio"/>
+  </connection>
+</model>

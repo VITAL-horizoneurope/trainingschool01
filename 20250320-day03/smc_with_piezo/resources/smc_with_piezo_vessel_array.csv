@@ -1,2 +1,3 @@
 name,                    BC_type,     vessel_type,        inp_vessels,          out_vessels
-smc,          nn,        smc_hernandez_with_piezo,                   ,                  
+smc,          nn,        smc_hernandez_with_piezo,                ,       piezo_channel              
+piezo_channel,nn,i_piezo_Na_tutorial,smc,
