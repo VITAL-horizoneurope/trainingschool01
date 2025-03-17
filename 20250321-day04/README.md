@@ -11,7 +11,7 @@ The tutorial session will require to:
 - Create a Python virtual environment with TensorFlow (2.8 or higher) installed to execute the tutorial codes;
 - Have enough knowledge of TensorFlow to modify network inputs and to switch network inputs with variables ([suggested TF documentation](https://www.tensorflow.org/guide/variable));
 - Have enough knowledge of TensorFlow to understand neural network training loops ([suggested TF tutorial](https://www.tensorflow.org/tutorials/quickstart/advanced));
-- Download the tutorial codes host at [Animus Lab repositories](https://github.com/ABI-Animus-Laboratory/AI_surrogate_tutorial/tree/main).
+- Download the tutorial codes hosted at [Animus Lab repositories](https://github.com/ABI-Animus-Laboratory/AI_surrogate_tutorial/tree/main).
 
 Ideally, but not strongly required, we encourage you to:
 - use a UNIX-like OS (this will enable us to give you better support during the tutorial);
