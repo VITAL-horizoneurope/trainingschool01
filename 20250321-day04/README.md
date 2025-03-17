@@ -14,6 +14,6 @@ The tutorial session will require to:
 - Download the tutorial codes host at [Animus Lab repositories](https://github.com/ABI-Animus-Laboratory/AI_surrogate_tutorial/tree/main).
 
 Ideally, but not strongly required, we encourage you to:
-- use a UNIX-like SO (this will enable us to give you better support during the tutorial);
+- use a UNIX-like OS (this will enable us to give you better support during the tutorial);
 - use an IDE such as PyCharm, VS Code or Eclipse pyDev (this will facilitate the coding and execution exercises);
 - bring a computer with an NVIDIA® GPU card with CUDA® architectures 3.5, 5.0, 6.0, 7.0, 7.5, 8.0 and higher (this will speed up the execution of the scripts).
