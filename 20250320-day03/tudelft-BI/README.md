@@ -1,5 +1,5 @@
 # VITAL training school on Bayesian inference
-Lecturers: Mathias Peirlinck, Rogier Krijnen
+Lecturers: Mathias Peirlinck, Rogier Krijnen  
 More information on our Bayesian Inference work: ([peirlincklab.com](https://peirlincklab.com/publications/))
 
 ## Workshop python environment installation instructions
