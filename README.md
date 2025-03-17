@@ -9,8 +9,8 @@ Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Nikol
 For Instructions on installation of OpenCOR and the python setup needed to run Circulatory Autogen please go to ([getting-started](https://finbarargus.github.io/circulatory_autogen/getting-started/))
 
 ### Bayesian inference workshop (day 3)
-We prepared a Python environment for you to run our Jupyter notebooks,
-you can find ([more information here]([https://github.com/VITAL-horizoneurope/trainingschool01/20250320-day03/tudelft-BI](https://github.com/VITAL-horizoneurope/trainingschool01/tree/6def7da1ee2be00b2f43d400f022634df209b479/20250320-day03/tudelft-BI))).
+We prepared a Python environment for you to run our Jupyter notebooks, located in trainingschool01/20250320-day03/tudelft_BI.
+Please install this environment beforehand.
 
 ### Surrogate Modelling (day 4)
 The tutorial session will require to:
