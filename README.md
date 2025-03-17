@@ -10,7 +10,7 @@ For Instructions on installation of OpenCOR and the python setup needed to run C
 
 ### Bayesian inference workshop (day 3)
 We prepared a Python environment for you to run our Jupyter notebooks,
-you can find ([more information here]([https://www.tensorflow.org/guide/variable](https://github.com/VITAL-horizoneurope/trainingschool01/tree/main/20250320-day03/tudelft-BI))).
+you can find ([more information here](https://github.com/VITAL-horizoneurope/trainingschool01/20250320-day03/tudelft-BI)).
 
 ### Surrogate Modelling (day 4)
 The tutorial session will require to:
