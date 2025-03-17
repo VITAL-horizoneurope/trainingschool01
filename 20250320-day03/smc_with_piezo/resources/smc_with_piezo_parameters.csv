@@ -1,5 +1,5 @@
 variable_name,units,value,data_reference
-g_piezo_channel,nanoS,4,estimated_from_Wijerathne2024
+g_piezo_channel,nS,4,estimated_from_Wijerathne2024
 m_r_init_piezo_channel,dimensionless,0.001,user_defined
 tau_r_piezo_channel,ms,10,user_defined
 r_50_piezo_channel,dimensionless,1.5,user_defined
