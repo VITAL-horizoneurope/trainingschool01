@@ -4,7 +4,7 @@ March 18-21 2025, Delft Netherlands
 Coordinator/organizer: Mathias Peirlinck  
 Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Nikolaos Stergiopulos, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou, Dimitrios Lialios, Rogier Krijnen
 
-# Installation Instructions OpenCOR and Circulatory Autogen (Required for days 1, 3, and 4)
+# Installation Instructions: OpenCOR and Circulatory Autogen (Required for days 1, 3, and 4)
 
 For Instructions on installation of OpenCOR and the python setup needed to run Circulatory Autogen please go to ([getting-started](https://finbarargus.github.io/circulatory_autogen/getting-started/))
 
