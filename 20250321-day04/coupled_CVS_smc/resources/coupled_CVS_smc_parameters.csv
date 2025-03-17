@@ -50,8 +50,8 @@ theta_ascending_aorta_A,dimensionless,0,defined_by_user
 l_ascending_aorta_A,metre,0.0153234,ADAN_86
 r_us_ascending_aorta_A,metre,0.015642,ADAN_86
 K_m_ascending_aorta_A,Js_per_m3,30000,Toro_2021
-Ca_50_K_tube_ascending_aorta_A,milliM,2,Toro_2021
-k_Ca_K_tube_ascending_aorta_A,milliM,1.0,Toro_2021
+Ca_50_K_tube_ascending_aorta_A,milliM,1.2e-4,user_defined
+k_Ca_K_tube_ascending_aorta_A,milliM,1e-5,user_defined
 mu,Js_per_m3,0.004,known
 g,m_per_s2,9.81,known
 beta_g,dimensionless,0,user_defined
