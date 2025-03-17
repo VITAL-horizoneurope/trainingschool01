@@ -10,7 +10,7 @@ k_V_piezo_channel,milliV,4.352,calculated_for_0.01_opening_at_V_of-80
 k_r_piezo_channel,dimensionless,0.0653,calculated_for_0.01_opening_at_r_ratio_of_1.2
 Vm_piezo_channel,milliV,-60,user_defined
 E_Na_piezo_channel,milliV,65,user_defined
-r_piezo_channel,dimensionless,1.2,user_defined
+r_ratio_piezo_channel,dimensionless,1.2,user_defined
 Ca_i_init_smc,mM,0.000103,hernandezhernandez2024
 V_init_smc,mV,-40.2576,hernandezhernandez2024
 F_smc,C_per_millimol,96.4853415,hernandezhernandez2024
