@@ -4,11 +4,16 @@ March 18-21 2025, Delft Netherlands
 Coordinator/organizer: Mathias Peirlinck  
 Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Nikolaos Stergiopulos, Lydia Aslanidou, Wouter Huberts, Shauna O'Donovan, Alberto Zingaro, Gonzalo Maso Talou, Dimitrios Lialios, Rogier Krijnen
 
-# Installation Instructions OpenCOR and Circulatory Autogen (Required for days 1, 3, and 4)
+## Installation instructions OpenCOR/Circulatory Autogen (days 1, 3, and 4)
 
 For Instructions on installation of OpenCOR and the python setup needed to run Circulatory Autogen please go to ([getting-started](https://finbarargus.github.io/circulatory_autogen/getting-started/))
 
-# Requirements for Surrogate Modelling (Required for day 4)
+## Installation instructions Bayesian inference workshop (day 3)
+
+We prepared a Python environment for you to run our Jupyter notebooks,
+you can find ([more information here]([https://www.tensorflow.org/guide/variable](https://github.com/VITAL-horizoneurope/trainingschool01/tree/main/20250320-day03/tudelft-BI))).
+
+## Requirements for Surrogate Modelling (day 4)
 
 The tutorial session will require to:
 - Have basic knowledge of Python coding;
