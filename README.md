@@ -9,7 +9,7 @@ Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Nikol
 For Instructions on installation of OpenCOR and the python setup needed to run Circulatory Autogen please go to ([getting-started](https://finbarargus.github.io/circulatory_autogen/getting-started/))
 
 ### Bayesian inference workshop (day 3)
-We prepared a Python environment for you to run our Jupyter notebooks,  
+We prepared a Python environment for you to run our Bayesian Inference Jupyter notebooks,  
 located in ([trainingschool01/20250320-day03/tudelft_BI](https://github.com/VITAL-horizoneurope/trainingschool01/tree/main/20250320-day03/tudelft-BI)).  
 Please install this environment beforehand.
 
@@ -26,3 +26,10 @@ Ideally, but not strongly required, we encourage you to:
 - use an IDE such as PyCharm, VS Code or Eclipse pyDev (this will facilitate the coding and execution exercises);
 - bring a computer with an NVIDIA® GPU card with CUDA® architectures 3.5, 5.0, 6.0, 7.0, 7.5, 8.0 and higher (this will speed up the execution of the scripts).
 
+
+### Alya workshop 
+
+The alya workshop will require:
+
+- a distribution of `conda`.
+- a distribution of [ParaView](https://www.paraview.org/download/).
