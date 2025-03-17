@@ -1,4 +1,8 @@
-# README: VITAL training school on Bayesian inference
+# VITAL training school on Bayesian inference
+Lecturers: Mathias Peirlinck, Rogier Krijnen
+More information on our Bayesian Inference work: ([peirlincklab.com](https://peirlincklab.com/publications/))
+
+## Workshop python environment installation instructions
 This readme will guide you through installing the environment file for these jupyter notebooks.
 The environment file itself also contains this package so there is no need to install this beforehand.
 
