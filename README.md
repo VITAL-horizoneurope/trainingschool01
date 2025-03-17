@@ -1,4 +1,4 @@
-## VITAL Training School 01
+# VITAL Training School 01
 March 18-21 2025, Delft Netherlands
 
 Coordinator/organizer: Mathias Peirlinck  
@@ -10,7 +10,7 @@ For Instructions on installation of OpenCOR and the python setup needed to run C
 
 ### Bayesian inference workshop (day 3)
 We prepared a Python environment for you to run our Jupyter notebooks,
-you can find ([more information here](https://github.com/VITAL-horizoneurope/trainingschool01/20250320-day03/tudelft-BI)).
+you can find ([more information here]([https://github.com/VITAL-horizoneurope/trainingschool01/20250320-day03/tudelft-BI](https://github.com/VITAL-horizoneurope/trainingschool01/tree/6def7da1ee2be00b2f43d400f022634df209b479/20250320-day03/tudelft-BI))).
 
 ### Surrogate Modelling (day 4)
 The tutorial session will require to:
