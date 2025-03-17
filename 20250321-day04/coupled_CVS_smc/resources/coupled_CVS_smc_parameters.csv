@@ -51,7 +51,7 @@ l_ascending_aorta_A,metre,0.0153234,ADAN_86
 r_us_ascending_aorta_A,metre,0.015642,ADAN_86
 K_m_ascending_aorta_A,Js_per_m3,30000,Toro_2021
 Ca_50_K_tube_ascending_aorta_A,milliM,2,Toro_2021
-k_Ca_K_tube_ascending_aorta_A,Js_per_m3,1.0,Toro_2021
+k_Ca_K_tube_ascending_aorta_A,milliM,1.0,Toro_2021
 mu,Js_per_m3,0.004,known
 g,m_per_s2,9.81,known
 beta_g,dimensionless,0,user_defined
