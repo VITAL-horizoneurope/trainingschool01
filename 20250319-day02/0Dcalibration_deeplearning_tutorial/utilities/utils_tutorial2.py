@@ -68,7 +68,6 @@ def load_all_ppg_radial(pwdb_data, old_sampling_rate, sampling_rate):
 
     # Extract other relevant data
     age = pwdb_data['config'][0, 0]['age'][0,0].flatten()
-    pwv_SD = pwdb_data['config'][0, 0]['dia_SD'][0,0].flatten()
 
     # Extract plausibility log
     plausibility_log = pwdb_data['plausibility'][0, 0]['plausibility_log'][0, 0].flatten()
@@ -85,7 +84,6 @@ def load_all_ppg_radial(pwdb_data, old_sampling_rate, sampling_rate):
         data_list.append({
             "subject_id": subject_id, 
             "age": age[subject_id],
-            "pwv_SD": pwv_SD[subject_id],
             "fs": sampling_rate,
             "signal_length": len(downsampled_signal),
             "ppg_signal": downsampled_signal.tolist(),
@@ -155,10 +153,9 @@ def split_train_test_data(dataset, mode="classification"):
         'subject_id': dataset['subject_id'][test_indices], #saving to explain potential misclassifications
         'ppg_signal': [dataset['ppg_signal'][i] for i in test_indices],
         'age': pd.Categorical(dataset['age'][test_indices]) if mode == "classification" else dataset['age'][test_indices],
-        'pwv_SD': dataset['pwv_SD'][test_indices] #saving to explain potential misclassifications ToDo this is an error
     })
     
-    test_data = test_data_full.drop(['subject_id','pwv_SD'],axis=1)
+    test_data = test_data_full.drop(['subject_id'],axis=1)
 
     if mode == "classification":
         print(f"Training data: {len(train_data['age'])} subjects ({sum(train_data['age'] == 25)} young and {sum(train_data['age'] == 75)} elderly)")
@@ -378,26 +375,12 @@ def plot_training_progress(history, mode):
     plt.figure(figsize=(12, 5))
 
     # Plot loss
-    plt.subplot(1, 2, 1)
     plt.plot(history.history['loss'], label='Train Loss', color='blue')
     plt.plot(history.history['val_loss'], label='Validation Loss', color='red')
     plt.xlabel('Epochs')
     plt.ylabel('Loss' if mode == "classification" else 'Mean Absolute Error')
     plt.title('Training & Validation Loss')
     plt.legend()
-
-    # Plot accuracy or MAE
-    plt.subplot(1, 2, 2)
-    if mode == "classification":
-        plt.plot(history.history.get('accuracy', []), label='Train Accuracy', color='blue')  # ToDo check
-        plt.plot(history.history.get('val_accuracy', []), label='Validation Accuracy', color='red')
-        plt.ylabel('Accuracy')
-        plt.title('Training & Validation Accuracy')
-    else:  # Regression
-        plt.plot(history.history.get('mae', []), label='Train MAE', color='blue')
-        plt.plot(history.history.get('val_mae', []), label='Validation MAE', color='red')
-        plt.ylabel('Mean Absolute Error')
-        plt.title('Training & Validation MAE')
 
     plt.xlabel('Epochs')
     plt.legend()
