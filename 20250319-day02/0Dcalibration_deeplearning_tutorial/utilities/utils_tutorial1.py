@@ -40,20 +40,15 @@ def load_subject_data(subject_id=1, pwdb_data=None, loc='AorticRoot'):
     velocity = pwdb_data['waves'][0, 0][velocity_key][0, 0][0, subject_id - 1].flatten() # in m/s
     area = pwdb_data['waves'][0, 0][area_key][0, 0][0, subject_id - 1].flatten() # in m^2
     HR = pwdb_data['haemods'][0, 0][0][subject_id - 1]['HR'][0, 0]
-    pvr = pwdb_data['haemods'][0, 0]['pvr'][0, subject_id - 1][0, 0]  # Access PVR for the given subject (in SI Pa*s/m^3) ToDo check
     flow = velocity*area*1e6 # in ml/s
   
     # Sampling frequency (500 Hz for PWDB)
     fs = pwdb_data['waves'][0, 0]['fs'][0, 0]
     # Generate the time vector
-    time_vector = np.arange(len(pressure)) / fs #ToDo check
+    time_vector = np.arange(len(pressure)) / fs 
     time = np.linspace(0, 60 / HR, len(pressure))
     print(f"Loaded data for Subject ID: {subject_id}")
-    print('NB. Pressure is in mmHg, flow in ml/s, area in m^2') #ToDo
-    print(f"Pressure shape: {pressure.shape}")
-    print(f"Velocity shape: {velocity.shape}")
-    print(f"Area shape: {area.shape}")
-    print(f"Time shape: {time.shape}")
+    #print('NB. Pressure is in mmHg, flow in ml/s, area in m^2')
     print(f"Heart Rate: {HR}")
 
     return pressure, flow, area, HR, pvr, time
