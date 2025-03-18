@@ -8,6 +8,10 @@ Lecturers: Mathias Peirlinck, Peter Hunter, Finbar Argus, Beatrice Ghitti, Nikol
 ### OpenCOR/Circulatory Autogen (days 1, 3, and 4)
 For Instructions on installation of OpenCOR and the python setup needed to run Circulatory Autogen please go to ([getting-started](https://finbarargus.github.io/circulatory_autogen/getting-started/))
 
+### 0D calibration and deep learning (day 2)
+Please download the Pulse Wave Data Base (PWDB) mat file, available at the end of this page https://zenodo.org/records/3275625, and place it in the `data` subfolder of the tutorial.
+You can prepare the python environment using the yaml file located in ([trainingschool01/20250319-day02/0Dcalibration_deeplearning_tutorial](https://github.com/VITAL-horizoneurope/trainingschool01/tree/main/20250320-day02/0Dcalibration_deeplearning_tutorial)).
+
 ### Bayesian inference workshop (day 3)
 We prepared a Python environment for you to run our Bayesian Inference Jupyter notebooks,  
 located in ([trainingschool01/20250320-day03/peirlincklab_BI](https://github.com/VITAL-horizoneurope/trainingschool01/tree/main/20250320-day03/peirlincklab-BI)).  
