@@ -1,0 +1,13 @@
+name: pyenv_0D_DL
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - tensorflow
+  - jupyter
