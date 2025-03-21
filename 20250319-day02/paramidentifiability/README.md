@@ -21,6 +21,11 @@ Implementation and simulation of (biological) dynamic models using DifferentialE
 Parameter estimation in Julia.  
 Parameter identifiability analysis with profile likelihood. 
 
+In this repository you will find:
+- A folder called *IntroductionToJulia*: this folder contains some notebooks that introduce more fundamental aspects of programming in Juila, this can be useful if you want to familiarise yourself with Julia. 
+- The  *EDES_Model_Identifiability.ipynb* notebook contains the contents of this workshop.
+- More information on the EDES model equations and parameters can be found in *EDES_Explained.pdf*
+
 ## Program
 The workshop starts with a short introductory presentation, outlining the releavnce of the gluocse-insulin system in maintaining metabolic resilence, the Eindhoven Diabetes Education Simulator (EDES), a computational model of the glucose-insulin system that has been shown to capture relevant features of metabolic resilence from measures time series of glcuose and insulin. The workshop will then explain the principles of parameter identifiablity and provide hands on experience using in-built Julia packages for determining parameter identifiability and an inplementation of the Profile Liklihood Analysis methods proposed by Raue et al [2].
 
